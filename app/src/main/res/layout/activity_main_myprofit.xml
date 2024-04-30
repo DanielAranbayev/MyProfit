@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/welcome"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainMyProfit">
@@ -100,6 +99,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginBottom="10dp"
+                            android:textStyle="bold"
                             />
 
 
@@ -113,7 +113,8 @@
                         android:background="@drawable/btnmove"
                         android:text="לוח זמני שבועי"
                         android:textSize="20dp"
-                        android:id="@+id/WeekSchedule"/>
+                        android:id="@+id/WeekSchedule"
+                        android:textStyle="bold"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="350dp"
@@ -121,7 +122,8 @@
                         android:layout_gravity="center"
                         android:background="@drawable/btnmove"
                         android:textSize="20dp"
-                        android:text="תוכנית אימונים"/>
+                        android:text="תוכנית אימונים"
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
             </LinearLayout>

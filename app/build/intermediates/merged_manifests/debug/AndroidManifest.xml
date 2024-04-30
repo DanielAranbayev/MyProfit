@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyProfit" >
         <activity
+            android:name="com.example.myprofit.SignIn"
+            android:exported="false" />
+        <activity
             android:name="com.example.myprofit.EventEditActivity"
             android:exported="false" />
         <activity

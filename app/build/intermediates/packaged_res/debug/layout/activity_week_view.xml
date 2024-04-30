@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WeekViewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text=" לוח זמנים שבועי"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,18 +29,22 @@
             android:textColor="#0471DD"
             android:background="@drawable/leftarrow"
             android:layout_gravity="right"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="7dp"
             android:onClick="previousWeekAction"/>
 
         <TextView
             android:id="@+id/monthYearTV"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="April 2024"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/edit_textback"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="60dp"
@@ -43,6 +57,11 @@
             android:onClick="nextWeekAction"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginBottom="7dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -128,17 +147,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginBottom="7dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Event"
-        android:textColor="#0068CF"
+        android:textColor="#DA4545"
         android:background="@null"
         android:textStyle="bold"
         android:onClick="newEventAction"
         android:layout_gravity="center"
         android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#6A6A6A" />
 
     <ListView
         android:id="@+id/eventListView"

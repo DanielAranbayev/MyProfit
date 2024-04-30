@@ -8,17 +8,6 @@
     android:orientation="vertical"
     android:background="@color/white"
     >
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_margin="8dp"
-        android:text="הירשם"
-        android:textSize="18dp"
-        android:layout_gravity="right"
-        android:background="@drawable/btnsignin"
-        android:id="@+id/btnsignin"
-        />
     <ImageView
         android:layout_width="260dp"
         android:layout_height="180dp"
@@ -38,9 +27,9 @@
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:background="@drawable/edit_textback"
-        android:hint="  מספר טלפון"
+        android:hint="  דוא''ל"
         android:inputType="textEmailAddress"
-        android:id="@+id/etPhoneNumber"/>
+        android:id="@+id/etEmail"/>
     <EditText
         android:layout_marginTop="30dp"
         android:layout_width="320dp"
@@ -62,6 +51,30 @@
         android:textColor="@color/white"
         android:id="@+id/btnConnect"
         />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:text="הרשמה"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#479FFF"
+            android:textSize="16dp"
+            android:id="@+id/SignIn"/>
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:text="אין לך משתמש?"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="150dp"
@@ -69,7 +82,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="שכחתי סיסמא"
+        android:text="שכחת את הסיסמה?"
         android:textSize="15dp"
         android:id="@+id/tvForgotPass"
         />

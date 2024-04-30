@@ -3088,8 +3088,6 @@ drawable rightarrow
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-drawable welcome
-drawable welcome2
 drawable welcome3
 drawable whitefade
 font abril_fatface
@@ -3108,6 +3106,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SignIn
 id TOP_END
 id TOP_START
 id WeekSchedule
@@ -3198,8 +3197,8 @@ id bounceEnd
 id bounceStart
 id btnConnect
 id btnLst
+id btnSignIn
 id btnlst
-id btnsignin
 id buttonPanel
 id cache_measures
 id calendarRecyclerView
@@ -3282,9 +3281,13 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etEmail
+id etEmailSN
 id etName
+id etNameAcountSN
+id etNameSN
 id etPassword
-id etPhoneNumber
+id etPasswordSN
 id eventCellTV
 id eventDateTV
 id eventListView
@@ -3729,6 +3732,7 @@ layout activity_main_menu
 layout activity_main_month
 layout activity_main_myprofit
 layout activity_main_personal
+layout activity_sign_in
 layout activity_week_view
 layout calendar_cell
 layout custom_dialog
