@@ -35,9 +35,7 @@
                     android:layout_height="55dp"
                     android:orientation="vertical"
                     >
-<!--                  new git  /-->
                     <TextView
-
                         android:layout_width="200dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
