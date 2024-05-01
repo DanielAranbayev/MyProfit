@@ -32,6 +32,7 @@ anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
 anim linear_indeterminate_line2_head_interpolator
 anim linear_indeterminate_line2_tail_interpolator
+anim logo_animation
 anim m3_bottom_sheet_slide_in
 anim m3_bottom_sheet_slide_out
 anim m3_motion_fade_enter
@@ -3010,8 +3011,10 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable instagramlogo
 drawable leftarrow
 drawable list
+drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3353,6 +3356,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logo
 id m3_side_sheet
 id marquee
 id masked
@@ -3726,6 +3730,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_animation
 layout activity_event_edit
 layout activity_main
 layout activity_main_menu
