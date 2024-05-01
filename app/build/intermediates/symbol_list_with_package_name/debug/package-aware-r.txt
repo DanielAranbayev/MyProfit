@@ -3013,6 +3013,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable instagramlogo
 drawable leftarrow
+drawable lineardesing
 drawable list
 drawable logo
 drawable m3_avd_hide_password
@@ -3201,6 +3202,8 @@ id bounceStart
 id btnConnect
 id btnLst
 id btnSignIn
+id btnbmi
+id btndetails
 id btnlst
 id buttonPanel
 id cache_measures

@@ -22,6 +22,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable instagramlogo
 drawable leftarrow
+drawable lineardesing
 drawable list
 drawable logo
 drawable mypro
@@ -38,6 +39,8 @@ id bottomNavigation
 id btnConnect
 id btnLst
 id btnSignIn
+id btnbmi
+id btndetails
 id btnlst
 id calendarRecyclerView
 id cellDayText
