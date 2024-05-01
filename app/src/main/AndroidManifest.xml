@@ -28,12 +28,6 @@
             android:name=".MainMonth"
             android:exported="false" />
         <activity
-            android:name=".MainmonthActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_mainweek"
-            android:exported="false" />
-        <activity
             android:name=".MainMenu"
             android:exported="false" />
         <activity

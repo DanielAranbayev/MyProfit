@@ -76,6 +76,10 @@
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.example.myprofit.app-merged_res-31:/layout_activity_main_personal.xml.flat",
+        "source": "com.example.myprofit.app-main-33:/layout/activity_main_personal.xml"
+    },
+    {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\drawable_list.png.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\list.png"
     },
@@ -96,6 +100,10 @@
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\rightarrow.png"
     },
     {
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\drawable_instagramlogo.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\instagramlogo.png"
+    },
+    {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\drawable_baseline_keyboard_arrow_down_24.xml.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\baseline_keyboard_arrow_down_24.xml"
     },
@@ -106,6 +114,10 @@
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\drawable_logo.png.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\drawable_lineardesing.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\drawable\\lineardesing.xml"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\layout_activity_event_edit.xml.flat",
@@ -182,10 +194,6 @@
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.myprofit.app-merged_res-31:/drawable_instagramlogo.png.flat",
-        "source": "com.example.myprofit.app-main-33:/drawable/instagramlogo.png"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-31:\\layout_activity_main_month.xml.flat",

@@ -5,59 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EventEditActivity">
-
+    tools:context=".EventEditActivity"
+    android:background="#FFCCCACA">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Name:"
-        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:text="New Event:"
+        android:textSize="40dp"
         android:textAlignment="center"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:id="@+id/eventNameET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:textSize="20sp"
-        android:ems="10"
-        android:inputType="text"/>
+        android:gravity="center"
+        android:background="@drawable/lineardesing"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp">
+        <EditText
+            android:id="@+id/eventNameET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/edit_textback"
+            android:hint="Event Name"
+            android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/eventDateTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Date"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/eventDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/eventTimeTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Time"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/eventTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Time"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:textColor="#EA0707"
-        android:background="@null"
-        android:textStyle="bold"
-        android:onClick="saveEventAction"
-        android:layout_gravity="center"
-        android:textSize="20sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#142378"
+            android:background="@drawable/btnsignin"
+            android:textStyle="bold"
+            android:onClick="saveEventAction"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
 
 </LinearLayout>

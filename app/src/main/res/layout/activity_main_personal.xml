@@ -63,11 +63,42 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="2dp"
                 android:background="@color/black"
                 />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnsignin"
+                android:text="BMI"
+                android:textSize="25dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/btnbmi"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:text="פרטים"
+                android:textSize="25dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/btndetails"/>
+        </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A8A8A8"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
