@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyProfit" >
         <activity
+            android:name="com.example.myprofit.MainActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.myprofit.SignIn"
             android:exported="false" />
         <activity
@@ -55,7 +58,7 @@
             android:name="com.example.myprofit.MainMyProfit"
             android:exported="false" />
         <activity
-            android:name="com.example.myprofit.MainActivity"
+            android:name="com.example.myprofit.AnimationActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

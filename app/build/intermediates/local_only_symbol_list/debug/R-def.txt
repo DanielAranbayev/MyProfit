@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+anim logo_animation
 anim slide_in_left
 anim slide_in_right
 anim slide_out_left
@@ -19,8 +20,10 @@ drawable facebookicone
 drawable fadegray
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable instagramlogo
 drawable leftarrow
 drawable list
+drawable logo
 drawable mypro
 drawable rightarrow
 drawable welcome3
@@ -50,9 +53,11 @@ id eventDateTV
 id eventListView
 id eventNameET
 id eventTimeTV
+id logo
 id monthYearTV
 id parentView
 id tvForgotPass
+layout activity_animation
 layout activity_event_edit
 layout activity_main
 layout activity_main_menu
