@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\diana\.gradle\caches\transforms-3\8241bb30405c657e3cd59db7ddc8ccf8\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\diana\.gradle\caches\transforms-3\7319c7cd5da2cf67dd771fc7622ed563\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\diana\.gradle\caches\transforms-3\d42e833ef7d0d4b3c7d8cae87143c93d\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\diana\.gradle\caches\transforms-3\3ec707cff46543b8dded404ad059f9d2\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\diana\.gradle\caches\transforms-3\d9adb752e9f09d045400ed6dceed3422\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\diana\.gradle\caches\transforms-3\a421b6cc253a8b9829718979ccc58393\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\diana\.gradle\caches\transforms-3\69f9ed67d1adc32cd75ed76e3ebf4607\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\diana\.gradle\caches\transforms-3\a00552e422d79c1ff411c9c68b05c6b9\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
@@ -56,12 +57,14 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\diana\.
 	xmlns:android
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-54:19
-INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-54:19
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-48:19
+INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-48:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\diana\.gradle\caches\transforms-3\8241bb30405c657e3cd59db7ddc8ccf8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\diana\.gradle\caches\transforms-3\8241bb30405c657e3cd59db7ddc8ccf8\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\diana\.gradle\caches\transforms-3\7319c7cd5da2cf67dd771fc7622ed563\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\diana\.gradle\caches\transforms-3\7319c7cd5da2cf67dd771fc7622ed563\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\diana\.gradle\caches\transforms-3\d9adb752e9f09d045400ed6dceed3422\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\diana\.gradle\caches\transforms-3\d9adb752e9f09d045400ed6dceed3422\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
@@ -126,52 +129,40 @@ ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\And
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:28:13-38
-activity#com.example.myprofit.MainmonthActivity
+activity#com.example.myprofit.MainMenu
 ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:31:13-46
-activity#com.example.myprofit.activity_mainweek
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:31:13-37
+activity#com.example.myprofit.MainPersonal
 ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:34:13-46
-activity#com.example.myprofit.MainMenu
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:34:13-41
+activity#com.example.myprofit.MainMyProfit
 ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:37:13-37
-activity#com.example.myprofit.MainPersonal
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:39:9-41:40
-	android:exported
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:41:13-37
-	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:40:13-41
-activity#com.example.myprofit.MainMyProfit
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:42:9-44:40
-	android:exported
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:44:13-37
-	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:37:13-41
 activity#com.example.myprofit.AnimationActivity
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:9-53:20
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:39:9-47:20
 	android:exported
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:47:13-36
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:46:13-46
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:40:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:48:13-52:29
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:49:17-69
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:49:25-66
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:51:17-77
+ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:51:27-74
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:27-74
 uses-sdk
 INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml
@@ -184,6 +175,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\diana\.gradl
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\diana\.gradle\caches\transforms-3\d42e833ef7d0d4b3c7d8cae87143c93d\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\diana\.gradle\caches\transforms-3\3ec707cff46543b8dded404ad059f9d2\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\diana\.gradle\caches\transforms-3\3ec707cff46543b8dded404ad059f9d2\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\diana\.gradle\caches\transforms-3\d9adb752e9f09d045400ed6dceed3422\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\diana\.gradle\caches\transforms-3\d9adb752e9f09d045400ed6dceed3422\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\diana\.gradle\caches\transforms-3\a421b6cc253a8b9829718979ccc58393\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\diana\.gradle\caches\transforms-3\a421b6cc253a8b9829718979ccc58393\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\diana\.gradle\caches\transforms-3\69f9ed67d1adc32cd75ed76e3ebf4607\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41

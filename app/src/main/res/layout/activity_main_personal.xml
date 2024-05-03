@@ -11,63 +11,116 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_weight="10"
+        android:layout_height="593dp"
         android:layout_gravity="bottom"
-        android:orientation="vertical"
-        >
+        android:layout_weight="10"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:layout_weight="0"
             android:background="@color/white"
-            android:orientation="vertical"
-            android:layout_weight="0">
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:layout_gravity="right"
-                >
+                android:layout_gravity="right">
+
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:background="@drawable/baseline_circle_notifications_24"/>
+                    android:background="@drawable/baseline_circle_notifications_24" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:layout_gravity="left"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="290dp"
                         android:layout_height="55dp"
-                        android:orientation="vertical"
-                        >
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="200dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:text="אם המושבות"
-                            android:gravity="center"
                             android:layout_margin="13dp"
-                            android:textSize="16dp"/>
+                            android:gravity="center"
+                            android:text="אם המושבות"
+                            android:textSize="16dp" />
                     </LinearLayout>
+
                     <ImageView
+                        android:id="@+id/btnLst"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:background="@drawable/list"
-                        android:id="@+id/btnLst"/>
+                        android:background="@drawable/list" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/black"
-                />
+                android:layout_height="2dp"
+                android:background="@color/black" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnbmi"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/edit_textback"
+                android:text="BMI"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndetails"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@color/white"
+                android:text="פרטים"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="440dp"
+            android:layout_gravity="center">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView4"
+                android:name="com.example.myprofit.BmiFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fragment_design"/>
+        </LinearLayout>
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A8A8A8"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"

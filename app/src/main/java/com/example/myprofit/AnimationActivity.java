@@ -31,6 +31,6 @@ public class AnimationActivity extends AppCompatActivity {
             }
         };
         Handler h = new Handler();
-        h.postDelayed(timer, 4000);
+        h.postDelayed(timer, 1800);
     }
 }

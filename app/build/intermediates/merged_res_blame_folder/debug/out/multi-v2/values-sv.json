@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myprofit.app-mergeDebugResources-29:/values-sv/values-sv.xml",
+            "outputFile": "com.example.myprofit.app-mergeDebugResources-30:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\3ec707cff46543b8dded404ad059f9d2\\transformed\\appcompat-1.6.1\\res\\values-sv\\values-sv.xml",

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,9 +24,6 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
     private ListView eventListView;
-//    private EventAdapter eventAdapter;
-//    private List<Event> events;
-//    private Event lastSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +31,6 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         setContentView(R.layout.activity_week_view); initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setWeekview();
-//        eventAdapter=new EventAdapter(this,events);
-        eventListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                lastSelected=eventAdapter.getItem(i);
-//                eventAdapter.remove(lastSelected);
-//                eventAdapter.notifyDataSetChanged();
-
-                return false;
-            }
-        });
     }
 
     private void initWidgets() {

@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.9.0] C:\Users\diana\.gradle\caches\transforms-3\17d98998aebface635fee25187eebb31\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-54:19
+17-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:5:5-48:19
 18        android:allowBackup="true"
 18-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -74,117 +74,105 @@
 44-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:29:13-37
 45        <activity
 45-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:30:9-32:40
-46            android:name="com.example.myprofit.MainmonthActivity"
-46-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:31:13-46
+46            android:name="com.example.myprofit.MainMenu"
+46-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:31:13-37
 47            android:exported="false" />
 47-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:32:13-37
 48        <activity
 48-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:33:9-35:40
-49            android:name="com.example.myprofit.activity_mainweek"
-49-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:34:13-46
+49            android:name="com.example.myprofit.MainPersonal"
+49-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:34:13-41
 50            android:exported="false" />
 50-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:35:13-37
 51        <activity
 51-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:36:9-38:40
-52            android:name="com.example.myprofit.MainMenu"
-52-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:37:13-37
+52            android:name="com.example.myprofit.MainMyProfit"
+52-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:37:13-41
 53            android:exported="false" />
 53-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:38:13-37
 54        <activity
-54-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:39:9-41:40
-55            android:name="com.example.myprofit.MainPersonal"
-55-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:40:13-41
-56            android:exported="false" />
-56-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:41:13-37
-57        <activity
-57-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:42:9-44:40
-58            android:name="com.example.myprofit.MainMyProfit"
-58-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:13-41
-59            android:exported="false" />
-59-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:44:13-37
-60        <activity
-60-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:9-53:20
-61            android:name="com.example.myprofit.AnimationActivity"
-61-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:46:13-46
-62            android:exported="true" >
-62-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:47:13-36
-63            <intent-filter>
-63-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:48:13-52:29
-64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:49:17-69
-64-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:49:25-66
-65
-66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:51:17-77
-66-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:51:27-74
-67            </intent-filter>
-68        </activity>
-69
-70        <provider
-70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-71            android:name="androidx.startup.InitializationProvider"
-71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-72            android:authorities="com.example.myprofit.androidx-startup"
-72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-73            android:exported="false" >
-73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+54-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:39:9-47:20
+55            android:name="com.example.myprofit.AnimationActivity"
+55-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:40:13-46
+56            android:exported="true" >
+56-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:41:13-36
+57            <intent-filter>
+57-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:42:13-46:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:17-69
+58-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:43:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:17-77
+60-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:45:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.example.myprofit.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
 74            <meta-data
-74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 76                android:value="androidx.startup" />
-76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\diana\.gradle\caches\transforms-3\1ab3ba1b0a0d97c0762f307ed7583914\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-77            <meta-data
-77-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-78-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-79                android:value="androidx.startup" />
-79-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\diana\.gradle\caches\transforms-3\8e42187cfb8ab696e4e38aad1f6d1430\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-80            <meta-data
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-82                android:value="androidx.startup" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-83        </provider>
-84
-85        <receiver
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-87            android:directBootAware="false"
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-88            android:enabled="true"
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-89            android:exported="true"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-90            android:permission="android.permission.DUMP" >
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+90            </intent-filter>
 91            <intent-filter>
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 93            </intent-filter>
 94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 96            </intent-filter>
-97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-99            </intent-filter>
-100            <intent-filter>
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\diana\.gradle\caches\transforms-3\e45f04e2c0c6b475b7fcf056a334e55d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-102            </intent-filter>
-103        </receiver>
-104    </application>
-105
-106</manifest>
+97        </receiver>
+98    </application>
+99
+100</manifest>
