@@ -13,45 +13,42 @@
         android:layout_height="180dp"
         android:layout_gravity="center"
         android:background="@drawable/mypro" />
-    <EditText
-        android:layout_marginTop="30dp"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:background="@drawable/edit_textback"
-        android:hint="  שם מלא"
-        android:id="@+id/etName"/>
-    <EditText
-        android:layout_marginTop="30dp"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:background="@drawable/edit_textback"
-        android:hint="  דוא''ל"
-        android:inputType="textEmailAddress"
-        android:id="@+id/etEmail"/>
-    <EditText
-        android:layout_marginTop="30dp"
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:background="@drawable/edit_textback"
-        android:hint="  סיסמא"
-        android:inputType="number"
-        android:id="@+id/etPassword"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_textback"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/etEmail"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_textback"
+        android:hint="Password"
+        android:inputType="number"
+        android:id="@+id/etPassword"
+        android:padding="10dp"/>
+
+    <TextView
         android:layout_width="270dp"
         android:layout_height="45dp"
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
         android:background="@drawable/acceptbtn"
-        android:text="התחבר"
+        android:text="Log In"
         android:textSize="20dp"
         android:textColor="@color/white"
         android:id="@+id/btnConnect"
+        android:gravity="center"
         />
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:orientation="horizontal"

@@ -3,16 +3,19 @@ package com.example.myprofit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
-    ImageView btnlst;
-    Button WeekSchedule;
+    ImageView btnlst ,instagram ,facebook;
+    TextView WeekSchedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +23,12 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main_myprofit);
         btnlst =(ImageView) findViewById(R.id.btnlst);
         btnlst.setOnClickListener(this);
-        WeekSchedule = (Button) findViewById(R.id.WeekSchedule);
+        WeekSchedule = (TextView) findViewById(R.id.WeekSchedule);
         WeekSchedule.setOnClickListener(this);
+        instagram = (ImageView) findViewById(R.id.instagram);
+        instagram.setOnClickListener(this);
+        facebook = (ImageView) findViewById(R.id.facebook);
+        facebook.setOnClickListener(this);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Ihome);
@@ -37,7 +44,7 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
                 finish();
                 return true;
             } else if (itemId == R.id.Imenu) {
-                startActivity(new Intent(getApplicationContext(), MainMenu.class));
+                startActivity(new Intent(getApplicationContext(), MainMonth.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
@@ -58,6 +65,31 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
             Intent intent=new Intent(this, WeekViewActivity.class);
             startActivity(intent);
         }
+        if (v==instagram)
+        {
+            openInstagramProfile("profitisrael");
+        }
+        if (v==facebook)
+        {
+            openWebsite("https://profitgym.co.il/");
+        }
+    }
+    private void openInstagramProfile(String username) {
+        Uri uri = Uri.parse("http://instagram.com/_u/" + username);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        intent.setPackage("com.instagram.android");
 
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            // Instagram app is not installed, open in browser instead
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://instagram.com/" + username)));
+        }
+    }
+    private void openWebsite(String url) {
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 }

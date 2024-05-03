@@ -8,6 +8,7 @@ anim slide_out_right
 color black
 color white
 drawable acceptbtn
+drawable baseline_calendar_month_24
 drawable baseline_circle_notifications_24
 drawable baseline_home_24
 drawable baseline_keyboard_arrow_down_24
@@ -15,6 +16,7 @@ drawable baseline_menu_24
 drawable baseline_person_24
 drawable btnmove
 drawable btnsignin
+drawable colculate_design
 drawable edit_textback
 drawable facebookicone
 drawable fadegray
@@ -28,6 +30,7 @@ drawable list
 drawable logo
 drawable mypro
 drawable rightarrow
+drawable user
 drawable welcome
 drawable whitefade
 font abril_fatface
@@ -44,7 +47,6 @@ id bmifragment
 id bottomNavigation
 id btnCalculate
 id btnConnect
-id btnLst
 id btnSignIn
 id btnbmi
 id btndetails
@@ -53,7 +55,6 @@ id calendarRecyclerView
 id cellDayText
 id etEmail
 id etEmailSN
-id etName
 id etNameAcountSN
 id etNameSN
 id etPassword
@@ -63,15 +64,17 @@ id eventDateTV
 id eventListView
 id eventNameET
 id eventTimeTV
+id facebook
 id fragmentContainerView4
+id instagram
 id logo
 id monthYearTV
 id parentView
 id tvForgotPass
+id user
 layout activity_animation
 layout activity_event_edit
 layout activity_main
-layout activity_main_menu
 layout activity_main_month
 layout activity_main_myprofit
 layout activity_main_personal

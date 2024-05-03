@@ -13,9 +13,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText etEmail,etPassword;
-    Button btnConnect;
+    TextView btnConnect;
     TextView tvForgotPass,SignIn;
 
     @Override
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         etEmail =(EditText) findViewById(R.id.etEmail);
         etPassword =(EditText) findViewById(R.id.etPassword);
-        btnConnect = (Button) findViewById(R.id.btnConnect);
+        btnConnect = (TextView) findViewById(R.id.btnConnect);
         tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         SignIn = (TextView) findViewById(R.id.SignIn);
 
@@ -39,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (btnConnect==v)
         {
+//            if (etEmail.getText().toString().length()>0 &&etPassword.getText().toString().length()>0)
+//            {
+//                Intent intent=new Intent(this,MainMyProfit.class);
+//                startActivity(intent);
+//            }
             Intent intent=new Intent(this,MainMyProfit.class);
             startActivity(intent);
         }

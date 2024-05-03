@@ -2978,6 +2978,7 @@ drawable abc_vector_test
 drawable acceptbtn
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_calendar_month_24
 drawable baseline_circle_notifications_24
 drawable baseline_home_24
 drawable baseline_keyboard_arrow_down_24
@@ -2993,6 +2994,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btnmove
 drawable btnsignin
+drawable colculate_design
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3097,6 +3099,7 @@ drawable rightarrow
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user
 drawable welcome
 drawable whitefade
 font abril_fatface
@@ -3211,7 +3214,6 @@ id bounceEnd
 id bounceStart
 id btnCalculate
 id btnConnect
-id btnLst
 id btnSignIn
 id btnbmi
 id btndetails
@@ -3300,7 +3302,6 @@ id enterAlways
 id enterAlwaysCollapsed
 id etEmail
 id etEmailSN
-id etName
 id etNameAcountSN
 id etNameSN
 id etPassword
@@ -3313,6 +3314,7 @@ id eventTimeTV
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facebook
 id fade
 id fill
 id fill_horizontal
@@ -3355,6 +3357,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id instagram
 id invisible
 id inward
 id italic
@@ -3613,6 +3616,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3748,7 +3752,6 @@ layout abc_tooltip
 layout activity_animation
 layout activity_event_edit
 layout activity_main
-layout activity_main_menu
 layout activity_main_month
 layout activity_main_myprofit
 layout activity_main_personal

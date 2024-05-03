@@ -7,10 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -29,6 +32,26 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.Imenu);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.Ihome) {
+                startActivity(new Intent(getApplicationContext(), MainMyProfit.class));
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                finish();
+                return true;
+            } else if (itemId == R.id.Iperson) {
+                startActivity(new Intent(getApplicationContext(), MainPersonal.class));
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                finish();
+                return true;
+            } else if (itemId == R.id.Imenu) {
+                return true;
+            }
+            return false;
+        });
     }
     private void initWidgets() {
         calendarRecyclerView = findViewById(R.id.calendarRecyclerView);

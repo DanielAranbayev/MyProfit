@@ -43,9 +43,6 @@
             android:name="com.example.myprofit.MainMonth"
             android:exported="false" />
         <activity
-            android:name="com.example.myprofit.MainMenu"
-            android:exported="false" />
-        <activity
             android:name="com.example.myprofit.MainPersonal"
             android:exported="false" />
         <activity
