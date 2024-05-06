@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,7 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPersonal extends AppCompatActivity implements View.OnClickListener {
     Button btnbmi;
-    TextView btndetails;
+    TextView btndetails,mainusername;
     ImageView user2;
 
     @Override
@@ -36,27 +38,26 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
         user2 = (ImageView) findViewById(R.id.user2);
         user2.setOnClickListener(this);
 
+        mainusername = (TextView) findViewById(R.id.mainusername);
+
+        // Retrieve the saved data from SharedPreferences
+        // Retrieve user data from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", "");
+        String username = sharedPreferences.getString("username", "");
+        String email = sharedPreferences.getString("email", "");
+
+        // Display the retrieved username in the TextView
+        mainusername.setText("Hello " + username);
+
+        DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Iperson);
-        Intent intent = getIntent();
-        String fullname = intent.getStringExtra("name");
-        String username = intent.getStringExtra("username");
-        String email = intent.getStringExtra("email");
 
-        DetailsFragment secondFragment = new DetailsFragment();
-
-        // Pass data to the second fragment
-        Bundle args = new Bundle();
-        args.putString("name" ,fullname);
-        args.putString("username", username);
-        args.putString("email", email);
-        secondFragment.setArguments(args);
-
-        // Begin a fragment transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainerView4,  secondFragment)
-                .commit();
+        fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, detailsFragment, null).setReorderingAllowed(true)
+                .addToBackStack("name").commit();
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();

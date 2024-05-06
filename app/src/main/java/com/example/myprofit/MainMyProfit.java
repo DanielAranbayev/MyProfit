@@ -2,10 +2,13 @@ package com.example.myprofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +23,7 @@ import org.jetbrains.annotations.Nullable;
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
     ImageView btnlst ,instagram ,facebook,user1;
     TextView WeekSchedule, trainingprogram, mainusername;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,17 +43,17 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         trainingprogram.setOnClickListener(this);
         mainusername = (TextView) findViewById(R.id.mainusername);
 
+        // Retrieve the saved data from SharedPreferences
+        // Retrieve user data from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String username = sharedPreferences.getString("username", "");
+
+        // Display the retrieved username in the TextView
+        mainusername.setText("Hello " + username);
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Ihome);
-
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String username = extras.getString("username");
-
-            // Display the received data in the UI
-            mainusername.setText("Hello: " + username);
-        }
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -74,8 +78,7 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v==btnlst)
         {
-            Intent intent=new Intent(this, MainMonth.class);
-            startActivity(intent);
+
         }
         if (v==WeekSchedule)
         {

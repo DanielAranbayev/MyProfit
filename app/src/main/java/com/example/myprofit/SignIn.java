@@ -2,7 +2,9 @@ package com.example.myprofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 public class SignIn extends AppCompatActivity implements View.OnClickListener {
     TextView btnSignIn;
     EditText etNameSN, etNameAcountSN,etEmailSN;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +31,22 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v==btnSignIn)
-        {
-            String Name = etNameSN.getText().toString();
-            String Username = etNameAcountSN.getText().toString();
-            String Email = etEmailSN.getText().toString();
+        if (v.getId() == R.id.btnSignIn) {
+            String name = etNameSN.getText().toString();
+            String username = etNameAcountSN.getText().toString();
+            String email = etEmailSN.getText().toString();
 
+            // Save user data using SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("name", name);
+            editor.putString("username", username);
+            editor.putString("email", email);
+            editor.apply();
+
+            // Start the main activity
             Intent intent = new Intent(this, MainMyProfit.class);
-            intent.putExtra("name", Name);
-            intent.putExtra("username", Username);
-            intent.putExtra("email", Email);
-            intent.putExtra("fragment", "your_fragment_tag");
             startActivity(intent);
-
         }
     }
 }
