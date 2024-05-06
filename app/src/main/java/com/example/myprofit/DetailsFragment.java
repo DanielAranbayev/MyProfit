@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +15,9 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class DetailsFragment extends Fragment {
+    private TextView fullnameTV;
+    private TextView usernameTV;
+    private TextView EmailTV;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +62,24 @@ public class DetailsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_details, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_details, container, false);//inflate
+
+        fullnameTV = rootView.findViewById(R.id.fullname);
+        usernameTV = rootView.findViewById(R.id.username);
+        EmailTV = rootView.findViewById(R.id.Email);
+        // Retrieve the data passed from the first fragment
+        Bundle args = getArguments();
+        if (args != null) {
+            String Name = args.getString("name");
+            String Username = args.getString("username");
+            String Email = args.getString("email");
+
+            // Display the received data in the UI
+            fullnameTV.setText("Full name: " + Name);
+            usernameTV .setText("Username: " + Username);
+            EmailTV.setText("Email: " + Email);
+        }
+        return rootView;
+
     }
 }

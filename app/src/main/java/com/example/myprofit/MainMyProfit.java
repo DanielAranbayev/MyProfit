@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
     ImageView btnlst ,instagram ,facebook,user1;
-    TextView WeekSchedule, trainingprogram;
+    TextView WeekSchedule, trainingprogram, mainusername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,19 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         user1.setOnClickListener(this);
         trainingprogram = (TextView) findViewById(R.id.trainingprogram);
         trainingprogram.setOnClickListener(this);
+        mainusername = (TextView) findViewById(R.id.mainusername);
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Ihome);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String username = extras.getString("username");
+
+            // Display the received data in the UI
+            mainusername.setText("Hello: " + username);
+        }
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();

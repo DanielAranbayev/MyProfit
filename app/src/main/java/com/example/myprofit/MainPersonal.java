@@ -38,6 +38,25 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Iperson);
+        Intent intent = getIntent();
+        String fullname = intent.getStringExtra("name");
+        String username = intent.getStringExtra("username");
+        String email = intent.getStringExtra("email");
+
+        DetailsFragment secondFragment = new DetailsFragment();
+
+        // Pass data to the second fragment
+        Bundle args = new Bundle();
+        args.putString("name" ,fullname);
+        args.putString("username", username);
+        args.putString("email", email);
+        secondFragment.setArguments(args);
+
+        // Begin a fragment transaction
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainerView4,  secondFragment)
+                .commit();
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -54,8 +73,10 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                 finish();
                 return true;
             }
+
             return false;
         });
+
     }
 
     @Override

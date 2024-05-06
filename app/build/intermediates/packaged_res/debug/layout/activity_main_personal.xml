@@ -92,28 +92,27 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnbmi"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_margin="20dp"
-                android:background="@drawable/edit_textback"
-                android:text="BMI"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/btndetails"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:background="@color/white"
+                android:background="@drawable/edit_textback"
                 android:text="Details"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:gravity="center"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnbmi"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="BMI"
+                android:background="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="380dp"

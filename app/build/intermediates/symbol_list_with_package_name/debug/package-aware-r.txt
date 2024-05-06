@@ -3110,6 +3110,7 @@ id BOTTOM_END
 id BOTTOM_START
 id BmiTV
 id CTRL
+id Email
 id FUNCTION
 id HeightET
 id Ihome
@@ -3337,6 +3338,7 @@ id fragmentContainerView3
 id fragmentContainerView4
 id fragment_container_view_tag
 id frost
+id fullname
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -3381,6 +3383,7 @@ id listMode
 id list_item
 id logo
 id m3_side_sheet
+id mainusername
 id marquee
 id masked
 id match_constraint
@@ -3625,6 +3628,7 @@ id useLogo
 id user1
 id user2
 id user3
+id username
 id vertical_only
 id view_offset_helper
 id view_transition

@@ -3109,6 +3109,7 @@ int id BOTTOM_END 0x7f090001
 int id BOTTOM_START 0x7f090002
 int id BmiTV 0x7f090003
 int id CTRL 0x7f090004
+int id Email 0x7f09021c
 int id FUNCTION 0x7f090005
 int id HeightET 0x7f090006
 int id Ihome 0x7f090007
@@ -3336,6 +3337,7 @@ int id fragmentContainerView3 0x7f090219
 int id fragmentContainerView4 0x7f0900e2
 int id fragment_container_view_tag 0x7f0900e3
 int id frost 0x7f0900e4
+int id fullname 0x7f09021d
 int id fullscreen_header 0x7f0900e5
 int id ghost_view 0x7f0900e6
 int id ghost_view_holder 0x7f0900e7
@@ -3380,6 +3382,7 @@ int id listMode 0x7f09010d
 int id list_item 0x7f09010e
 int id logo 0x7f09010f
 int id m3_side_sheet 0x7f090110
+int id mainusername 0x7f09021f
 int id marquee 0x7f090111
 int id masked 0x7f090112
 int id match_constraint 0x7f090113
@@ -3624,6 +3627,7 @@ int id useLogo 0x7f090200
 int id user1 0x7f090214
 int id user2 0x7f090215
 int id user3 0x7f090216
+int id username 0x7f09021e
 int id vertical_only 0x7f090202
 int id view_offset_helper 0x7f090203
 int id view_transition 0x7f090204
