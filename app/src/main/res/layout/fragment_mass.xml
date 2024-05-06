@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 1: Chest and Traps: "
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bench press on a Smith machine: 4 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Butterfly chest press on a plate machine: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats standing with heavy weights: 4 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoulder presses standing with dumbbells: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 2: Back and Arms: "
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat pulldown on a cable machine: 4 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upper back pull on a cable pulley machine: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push-ups on a cable pulley machine: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicep curls standing: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 3: Legs and Abs: "
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats on a machine or with dumbbells: 4 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leg extensions on a leg press machine: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ab crunches on a sit-up bench: 3 sets × 10-12 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 4: Rest "
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 5: Shoulders and Arms: "
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoulder presses sitting: 4 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lateral raises for shoulders: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tricep dips sitting: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push-ups on a cable pulley machine: 3 sets × 8-10 reps"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

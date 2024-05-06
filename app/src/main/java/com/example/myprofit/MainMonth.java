@@ -7,10 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -18,9 +25,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnItemListener {
+public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnItemListener, View.OnClickListener {
     TextView monthYearText;
     RecyclerView calendarRecyclerView;
+    ImageView user3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +37,28 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.Imenu);
+        user3 = (ImageView) findViewById(R.id.user3);
+        user3.setOnClickListener(this);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.Ihome) {
+                startActivity(new Intent(getApplicationContext(), MainMyProfit.class));
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                finish();
+                return true;
+            } else if (itemId == R.id.Iperson) {
+                startActivity(new Intent(getApplicationContext(), MainPersonal.class));
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                finish();
+                return true;
+            } else if (itemId == R.id.Imenu) {
+                return true;
+            }
+            return false;
+        });
     }
     private void initWidgets() {
         calendarRecyclerView = findViewById(R.id.calendarRecyclerView);
@@ -65,5 +95,9 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         CalendarUtils.selectedDate = date;
         setMonthView();
         }
+    }
+
+    @Override
+    public void onClick(View view) {
     }
 }

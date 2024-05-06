@@ -17,44 +17,52 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_gravity="right"
+            android:orientation="horizontal"
             >
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/user1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/edit_textback"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/user"/>
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello Username"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
             <ImageView
+                android:id="@+id/btnlst"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:background="@drawable/list"
                 android:layout_margin="5dp"
-                android:background="@drawable/baseline_circle_notifications_24"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_gravity="left"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="290dp"
-                    android:layout_height="55dp"
-                    android:orientation="vertical"
-                    >
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:text="אם המושבות"
-                        android:gravity="center"
-                        android:layout_margin="13dp"
-                        android:textSize="16dp"/>
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/list"
-                    android:id="@+id/btnlst"/>
-            </LinearLayout>
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="3dp"
             android:background="@color/black"
             />
     </LinearLayout>
@@ -84,46 +92,49 @@
                         android:orientation="horizontal"
                         android:layout_gravity="center"
                         >
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/baseline_keyboard_arrow_down_24"
-                            android:layout_gravity="center"/>
                         <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="30dp"
-                            android:text="לעוד מידע ופרטים"
-                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="For more information"
+                            android:textSize="20dp"
                             android:textColor="@color/black"
                             android:gravity="center"
                             android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginBottom="20dp"
                             android:textStyle="bold"
                             />
-
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/baseline_keyboard_arrow_down_24"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"/>
 
                     </LinearLayout>
-                    <androidx.appcompat.widget.AppCompatButton
+                    <TextView
                         android:layout_width="350dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/btnmove"
-                        android:text="לוח זמני שבועי"
+                        android:text="Weekly Schedule"
                         android:textSize="20dp"
                         android:id="@+id/WeekSchedule"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:gravity="center"/>
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <TextView
                         android:layout_width="350dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:background="@drawable/btnmove"
                         android:textSize="20dp"
-                        android:text="תוכנית אימונים"
-                        android:textStyle="bold"/>
+                        android:text="Traning Program"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/trainingprogram"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -142,26 +153,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="550dp"
                 android:orientation="vertical"
-                android:background="@drawable/whitefade">
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="122dp"
+                    android:layout_height="92dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="50dp"
-                    android:background="@drawable/facebookicone"
-                    />
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mypro"
+                        android:id="@+id/facebook"
+                        />
+                </LinearLayout>
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="30dp"
-                    android:text="פייסבוק"
+                    android:text="Visit The Site"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textSize="20dp"
                     android:textColor="#FF0057"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="45dp"
                     android:layout_marginTop="5dp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
@@ -176,7 +194,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/abril_fatface"
-                        android:text="שעות פעילות"
+                        android:text="Activity time"
                         android:textSize="20dp"
                         android:gravity="center"
                         android:textStyle="bold"
@@ -185,28 +203,50 @@
                         android:layout_width="200dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:text="יום א'-ה' 06:00-23:00"
+                        android:text="SUN-THU: 06:00-23:00"
                         android:textSize="17dp"
                         android:gravity="center"
+                        android:textStyle="bold"
                         />
                     <TextView
                         android:layout_width="200dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:text="יום ו' 06:00-23:00"
+                        android:text="FRI: 06:00-23:00"
                         android:textSize="17dp"
                         android:gravity="center"
+                        android:textStyle="bold"
                         />
                     <TextView
                         android:layout_width="200dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:text="יום ש' 18:00-23:00"
+                        android:text="SAT: 18:00-23:00"
                         android:textSize="17dp"
                         android:gravity="center"
+                        android:textStyle="bold"
                         />
 
                 </LinearLayout>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/instagramlogo"
+                    android:id="@+id/instagram"
+                    />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:text="Instagram"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#FF0057"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
