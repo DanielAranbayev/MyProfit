@@ -8,6 +8,8 @@
         android:minSdkVersion="28"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <permission
         android:name="com.example.myprofit.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -27,6 +29,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MyProfit" >
+        <activity
+            android:name="com.example.myprofit.TrainigProgram"
+            android:exported="false" />
         <activity
             android:name="com.example.myprofit.MainActivity"
             android:exported="false" />

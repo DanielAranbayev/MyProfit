@@ -55,22 +55,22 @@
         android:layout_gravity="center"
         android:gravity="center">
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Do not have an account? "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"/>
+        <TextView
             android:layout_width="55dp"
             android:layout_height="30dp"
-            android:text="הרשמה"
+            android:text="Sign up"
             android:layout_gravity="center"
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="#479FFF"
             android:textSize="16dp"
             android:id="@+id/SignIn"/>
-        <TextView
-            android:layout_width="115dp"
-            android:layout_height="30dp"
-            android:text="אין לך משתמש?"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="16dp"/>
     </LinearLayout>
 
     <TextView

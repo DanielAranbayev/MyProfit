@@ -7,17 +7,22 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPersonal extends AppCompatActivity implements View.OnClickListener {
     Button btnbmi;
     TextView btndetails;
+    ImageView user2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +33,11 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
         btnbmi.setOnClickListener(this);
         btndetails.setOnClickListener(this);
 
+        user2 = (ImageView) findViewById(R.id.user2);
+        user2.setOnClickListener(this);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Iperson);
-
-
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();

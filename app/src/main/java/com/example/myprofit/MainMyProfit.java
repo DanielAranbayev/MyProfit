@@ -6,16 +6,20 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.jetbrains.annotations.Nullable;
+
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
-    ImageView btnlst ,instagram ,facebook;
-    TextView WeekSchedule;
+    ImageView btnlst ,instagram ,facebook,user1;
+    TextView WeekSchedule, trainingprogram;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +33,13 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         instagram.setOnClickListener(this);
         facebook = (ImageView) findViewById(R.id.facebook);
         facebook.setOnClickListener(this);
+        user1 = (ImageView) findViewById(R.id.user1);
+        user1.setOnClickListener(this);
+        trainingprogram = (TextView) findViewById(R.id.trainingprogram);
+        trainingprogram.setOnClickListener(this);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Ihome);
-
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -72,6 +79,11 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         if (v==facebook)
         {
             openWebsite("https://profitgym.co.il/");
+        }
+        if (v==trainingprogram)
+        {
+            Intent intent=new Intent(this, TrainigProgram.class);
+            startActivity(intent);
         }
     }
     private void openInstagramProfile(String username) {

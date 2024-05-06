@@ -2978,6 +2978,7 @@ drawable abc_vector_test
 drawable acceptbtn
 drawable avd_hide_password
 drawable avd_show_password
+drawable backtraining
 drawable baseline_calendar_month_24
 drawable baseline_circle_notifications_24
 drawable baseline_home_24
@@ -2994,6 +2995,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btnmove
 drawable btnsignin
+drawable btntraining
 drawable colculate_design
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3218,6 +3220,8 @@ id btnSignIn
 id btnbmi
 id btndetails
 id btnlst
+id btnmass
+id btntoning
 id buttonPanel
 id cache_measures
 id calendarRecyclerView
@@ -3329,6 +3333,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragmentContainerView3
 id fragmentContainerView4
 id fragment_container_view_tag
 id frost
@@ -3602,6 +3607,7 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id trainingprogram
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3616,7 +3622,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id user
+id user1
+id user2
+id user3
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3756,6 +3764,7 @@ layout activity_main_month
 layout activity_main_myprofit
 layout activity_main_personal
 layout activity_sign_in
+layout activity_trainig_program
 layout activity_week_view
 layout calendar_cell
 layout custom_dialog
@@ -3777,6 +3786,8 @@ layout design_text_input_start_icon
 layout event_cell
 layout fragment_bmi
 layout fragment_details
+layout fragment_mass
+layout fragment_toning
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

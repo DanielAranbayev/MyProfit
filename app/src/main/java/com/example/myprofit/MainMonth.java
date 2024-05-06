@@ -8,8 +8,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,9 +25,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnItemListener {
+public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnItemListener, View.OnClickListener {
     TextView monthYearText;
     RecyclerView calendarRecyclerView;
+    ImageView user3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,8 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         setMonthView();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Imenu);
+        user3 = (ImageView) findViewById(R.id.user3);
+        user3.setOnClickListener(this);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -88,5 +95,9 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         CalendarUtils.selectedDate = date;
         setMonthView();
         }
+    }
+
+    @Override
+    public void onClick(View view) {
     }
 }
