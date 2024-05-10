@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,7 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPersonal extends AppCompatActivity implements View.OnClickListener {
     Button btnbmi;
-    TextView btndetails;
+    TextView btndetails,mainusername;
     ImageView user2;
 
     @Override
@@ -35,6 +37,29 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
 
         user2 = (ImageView) findViewById(R.id.user2);
         user2.setOnClickListener(this);
+
+        mainusername = (TextView) findViewById(R.id.mainusername);
+
+        // Retrieve the saved data from SharedPreferences
+        // Retrieve user data from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", "");
+        String username = sharedPreferences.getString("username", "");
+        String email = sharedPreferences.getString("email", "");
+
+        // Display the retrieved username in the TextView
+        mainusername.setText("Hello " + username);
+        if (savedInstanceState == null) {
+            // If no saved instance state, create a new DetailsFragment instance
+            DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, detailsFragment, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
+        }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Iperson);
@@ -54,8 +79,10 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                 finish();
                 return true;
             }
+
             return false;
         });
+
     }
 
     @Override
@@ -64,16 +91,27 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
             btnbmi.setBackground(getResources().getDrawable(R.drawable.edit_textback));
             btndetails.setBackgroundColor(Color.WHITE);
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, BmiFragment.class,null).setReorderingAllowed(true)
-                    .addToBackStack("name").commit();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, new BmiFragment(), null) // Create instance of fragment
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
         }
         if (v==btndetails)
         {
+            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+            String name = sharedPreferences.getString("name", "");
+            String username = sharedPreferences.getString("username", "");
+            String email = sharedPreferences.getString("email", "");
+            DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
             btnbmi.setBackgroundColor(Color.WHITE);
             btndetails.setBackground(getResources().getDrawable(R.drawable.edit_textback));
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, DetailsFragment.class,null).setReorderingAllowed(true)
-                    .addToBackStack("name").commit();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, detailsFragment, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
         }
     }
 }

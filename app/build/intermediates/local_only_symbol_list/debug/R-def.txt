@@ -37,6 +37,7 @@ drawable welcome
 drawable whitefade
 font abril_fatface
 id BmiTV
+id Email
 id HeightET
 id Ihome
 id Imenu
@@ -69,10 +70,12 @@ id eventListView
 id eventNameET
 id eventTimeTV
 id facebook
+id fragmentContainerView
 id fragmentContainerView3
-id fragmentContainerView4
+id fullname
 id instagram
 id logo
+id mainusername
 id monthYearTV
 id parentView
 id trainingprogram
@@ -80,6 +83,7 @@ id tvForgotPass
 id user1
 id user2
 id user3
+id username
 layout activity_animation
 layout activity_event_edit
 layout activity_main

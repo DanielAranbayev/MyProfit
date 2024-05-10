@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnItemListener, View.OnClickListener {
-    TextView monthYearText;
+    TextView monthYearText,mainusername;
     RecyclerView calendarRecyclerView;
     ImageView user3;
 
@@ -41,6 +43,16 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         bottomNavigationView.setSelectedItemId(R.id.Imenu);
         user3 = (ImageView) findViewById(R.id.user3);
         user3.setOnClickListener(this);
+
+        mainusername = (TextView) findViewById(R.id.mainusername);
+
+        // Retrieve the saved data from SharedPreferences
+        // Retrieve user data from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String username = sharedPreferences.getString("username", "");
+
+        // Display the retrieved username in the TextView
+        mainusername.setText("Hello " + username);
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
