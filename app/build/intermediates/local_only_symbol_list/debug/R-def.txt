@@ -70,8 +70,8 @@ id eventListView
 id eventNameET
 id eventTimeTV
 id facebook
+id fragmentContainerView
 id fragmentContainerView3
-id fragmentContainerView4
 id fullname
 id instagram
 id logo

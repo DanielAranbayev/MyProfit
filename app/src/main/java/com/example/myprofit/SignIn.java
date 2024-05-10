@@ -24,7 +24,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         etNameSN = (EditText) findViewById(R.id.etNameSN);
         etNameAcountSN = (EditText) findViewById(R.id.etNameAcountSN);
         etEmailSN = (EditText) findViewById(R.id.etEmailSN);
-
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE); // Initialize here
         btnSignIn = (TextView) findViewById(R.id.btnSignIn);
         btnSignIn.setOnClickListener(this);
     }
@@ -37,7 +37,6 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
             String email = etEmailSN.getText().toString();
 
             // Save user data using SharedPreferences
-            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("name", name);
             editor.putString("username", username);

@@ -121,12 +121,11 @@
             android:layout_gravity="center">
 
             <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView4"
-                android:name="com.example.myprofit.BmiFragment"
-                android:layout_width="match_parent"
+                android:id="@+id/fragmentContainerView"
+                android:name="com.example.myprofit.DetailsFragment"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/fragment_design"/>
+                android:layout_weight="1" />
         </LinearLayout>
 
     </LinearLayout>

@@ -49,15 +49,20 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
 
         // Display the retrieved username in the TextView
         mainusername.setText("Hello " + username);
+        if (savedInstanceState == null) {
+            // If no saved instance state, create a new DetailsFragment instance
+            DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
 
-        DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, detailsFragment, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
+        }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Iperson);
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, detailsFragment, null).setReorderingAllowed(true)
-                .addToBackStack("name").commit();
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -86,16 +91,27 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
             btnbmi.setBackground(getResources().getDrawable(R.drawable.edit_textback));
             btndetails.setBackgroundColor(Color.WHITE);
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, BmiFragment.class,null).setReorderingAllowed(true)
-                    .addToBackStack("name").commit();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, new BmiFragment(), null) // Create instance of fragment
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
         }
         if (v==btndetails)
         {
+            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+            String name = sharedPreferences.getString("name", "");
+            String username = sharedPreferences.getString("username", "");
+            String email = sharedPreferences.getString("email", "");
+            DetailsFragment detailsFragment = DetailsFragment.newInstance(name, username, email);
             btnbmi.setBackgroundColor(Color.WHITE);
             btndetails.setBackground(getResources().getDrawable(R.drawable.edit_textback));
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragmentContainerView4, DetailsFragment.class,null).setReorderingAllowed(true)
-                    .addToBackStack("name").commit();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerView, detailsFragment, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack("name")
+                    .commit();
         }
     }
 }
