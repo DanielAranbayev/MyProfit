@@ -3,7 +3,9 @@ package com.example.myprofit;
 import static com.example.myprofit.CalendarUtils.daysInMonthArray;
 import static com.example.myprofit.CalendarUtils.monthYearFromDate;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,12 +16,15 @@ import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -31,6 +36,9 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
     TextView monthYearText,mainusername;
     RecyclerView calendarRecyclerView;
     ImageView user3;
+    public DrawerLayout drawerLayout;
+    public NavigationView menunav;
+    ImageView btnmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,10 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         bottomNavigationView.setSelectedItemId(R.id.Imenu);
         user3 = (ImageView) findViewById(R.id.user3);
         user3.setOnClickListener(this);
+        btnmenu =(ImageView) findViewById(R.id.btnmenu);
+        btnmenu.setOnClickListener(this);
+
+        menunav = (NavigationView) findViewById(R.id.menunav);
 
         mainusername = (TextView) findViewById(R.id.mainusername);
 
@@ -70,6 +82,33 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                 return true;
             }
             return false;
+        });
+
+        drawerLayout =findViewById(R.id.drawerLayout);
+        menunav = (NavigationView) findViewById(R.id.menunav);
+        menunav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if(id == R.id.info)
+                {
+//                    Intent intent = new Intent(this, Account.class);
+//                    startActivity(intent);
+                }
+                if(id == R.id.logout)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
+                if(id == R.id.pp)
+                {
+                    String url = "https://api.fizikal.co.il/policy.html";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+                return false;
+            }
         });
     }
     private void initWidgets() {
@@ -110,6 +149,10 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View v) {
+        if (v==btnmenu)
+        {
+            drawerLayout.openDrawer(menunav);
+        }
     }
 }

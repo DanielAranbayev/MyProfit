@@ -1,6 +1,8 @@
 package com.example.myprofit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -12,6 +14,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -20,11 +23,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainPersonal extends AppCompatActivity implements View.OnClickListener {
     Button btnbmi;
     TextView btndetails,mainusername;
     ImageView user2;
+    public DrawerLayout drawerLayout;
+    public NavigationView menunav;
+    ImageView btnmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +42,15 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
         btndetails = (TextView) findViewById(R.id.btndetails);
         btnbmi.setOnClickListener(this);
         btndetails.setOnClickListener(this);
+        mainusername = (TextView) findViewById(R.id.mainusername);
 
         user2 = (ImageView) findViewById(R.id.user2);
         user2.setOnClickListener(this);
+        btnmenu =(ImageView) findViewById(R.id.btnmenu);
+        btnmenu.setOnClickListener(this);
 
-        mainusername = (TextView) findViewById(R.id.mainusername);
+        drawerLayout =findViewById(R.id.drawerLayout);
+        menunav = (NavigationView) findViewById(R.id.menunav);
 
         // Retrieve the saved data from SharedPreferences
         // Retrieve user data from SharedPreferences
@@ -83,6 +95,31 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
             return false;
         });
 
+        menunav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if(id == R.id.info)
+                {
+//                    Intent intent = new Intent(this, Account.class);
+//                    startActivity(intent);
+                }
+                if(id == R.id.logout)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
+                if(id == R.id.pp)
+                {
+                    String url = "https://api.fizikal.co.il/policy.html";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
+
     }
 
     @Override
@@ -112,6 +149,10 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                     .setReorderingAllowed(true)
                     .addToBackStack("name")
                     .commit();
+        }
+        if (v==btnmenu)
+        {
+            drawerLayout.openDrawer(menunav);
         }
     }
 }

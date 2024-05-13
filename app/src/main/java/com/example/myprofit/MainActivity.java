@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,6 +38,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnConnect.setOnClickListener(this);
         tvForgotPass.setOnClickListener(this);
         SignIn.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseAuth mAuth;
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(this, MainMyProfit.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override

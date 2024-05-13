@@ -12,10 +12,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class SignIn extends AppCompatActivity implements View.OnClickListener {
     TextView btnSignIn;
-    EditText etNameSN, etNameAcountSN,etEmailSN;
+    EditText etNameSN, etNameAcountSN,etEmailSN,etPasswordSN;
     SharedPreferences sharedPreferences;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,8 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE); // Initialize here
         btnSignIn = (TextView) findViewById(R.id.btnSignIn);
         btnSignIn.setOnClickListener(this);
+        etPasswordSN = (EditText) findViewById(R.id.etPasswordSN);
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -42,10 +50,17 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
             editor.putString("username", username);
             editor.putString("email", email);
             editor.apply();
-
-            // Start the main activity
-            Intent intent = new Intent(this, MainMyProfit.class);
-            startActivity(intent);
+            Intent intent = new Intent(this,MainMyProfit.class);
+            if (btnSignIn==v)
+            {
+                mAuth.createUserWithEmailAndPassword(String.valueOf(etEmailSN.getText()),String.valueOf(etPasswordSN.getText()))
+                        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                            @Override
+                            public void onSuccess(AuthResult authResult) {
+                                startActivity(intent);
+                            }
+                        });
+            }
         }
     }
 }
