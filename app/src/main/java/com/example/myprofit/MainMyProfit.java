@@ -1,7 +1,10 @@
 package com.example.myprofit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,20 +21,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.jetbrains.annotations.Nullable;
 
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
-    ImageView btnlst ,instagram ,facebook,user1;
+    ImageView btnmenu ,instagram ,facebook,user1;
     TextView WeekSchedule, trainingprogram, mainusername;
     SharedPreferences sharedPreferences;
+    public DrawerLayout drawerLayout;
+    public NavigationView menunav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_myprofit);
-        btnlst =(ImageView) findViewById(R.id.btnlst);
-        btnlst.setOnClickListener(this);
+        btnmenu =(ImageView) findViewById(R.id.btnmenu);
+        btnmenu.setOnClickListener(this);
         WeekSchedule = (TextView) findViewById(R.id.WeekSchedule);
         WeekSchedule.setOnClickListener(this);
         instagram = (ImageView) findViewById(R.id.instagram);
@@ -42,6 +50,33 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         trainingprogram = (TextView) findViewById(R.id.trainingprogram);
         trainingprogram.setOnClickListener(this);
         mainusername = (TextView) findViewById(R.id.mainusername);
+        drawerLayout =findViewById(R.id.drawerLayout);
+        menunav = (NavigationView) findViewById(R.id.menunav);
+        menunav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if(id == R.id.info)
+                {
+//                    Intent intent = new Intent(this, Account.class);
+//                    startActivity(intent);
+                }
+                if(id == R.id.logout)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
+                if(id == R.id.pp)
+                {
+                    String url = "https://api.fizikal.co.il/policy.html";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
 
         // Retrieve the saved data from SharedPreferences
         // Retrieve user data from SharedPreferences
@@ -76,9 +111,9 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v==btnlst)
+        if (v==btnmenu)
         {
-
+            drawerLayout.openDrawer(menunav);
         }
         if (v==WeekSchedule)
         {
