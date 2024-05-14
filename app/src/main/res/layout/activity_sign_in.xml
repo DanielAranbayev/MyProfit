@@ -57,7 +57,7 @@
         android:layout_marginTop="75dp"
         android:layout_gravity="center"
         android:background="@drawable/acceptbtn"
-        android:text="Sign In"
+        android:text="Sign up"
         android:textSize="20dp"
         android:textColor="@color/white"
         android:id="@+id/btnSignIn"

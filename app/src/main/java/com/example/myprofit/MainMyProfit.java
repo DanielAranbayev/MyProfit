@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.accounts.Account;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -59,8 +60,10 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
                 int id = item.getItemId();
                 if(id == R.id.info)
                 {
-//                    Intent intent = new Intent(this, Account.class);
-//                    startActivity(intent);
+                    Dialog d = new Dialog(MainMyProfit.this);
+                    d.setContentView(R.layout.info);
+                    d.setCancelable(true);
+                    d.show();
                 }
                 if(id == R.id.logout)
                 {

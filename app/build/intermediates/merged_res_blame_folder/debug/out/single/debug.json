@@ -84,20 +84,16 @@
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\anim\\slide_out_left.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-43:/layout_activity_main_myprofit.xml.flat",
-        "source": "com.example.myprofit.app-main-45:/layout/activity_main_myprofit.xml"
-    },
-    {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\drawable_logo.png.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\layout_activity_sign_in.xml.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -134,6 +130,14 @@
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-45:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.myprofit.app-merged_res-43:/layout_activity_main.xml.flat",
+        "source": "com.example.myprofit.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myprofit.app-merged_res-43:/layout_info.xml.flat",
+        "source": "com.example.myprofit.app-main-45:/layout/info.xml"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

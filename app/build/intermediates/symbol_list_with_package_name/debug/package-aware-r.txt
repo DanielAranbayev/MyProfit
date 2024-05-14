@@ -3861,6 +3861,7 @@ layout fragment_details
 layout fragment_mass
 layout fragment_toning
 layout header_layout
+layout info
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

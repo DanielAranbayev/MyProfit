@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -101,8 +102,10 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                 int id = item.getItemId();
                 if(id == R.id.info)
                 {
-//                    Intent intent = new Intent(this, Account.class);
-//                    startActivity(intent);
+                    Dialog d = new Dialog(MainPersonal.this);
+                    d.setContentView(R.layout.info);
+                    d.setCancelable(true);
+                    d.show();
                 }
                 if(id == R.id.logout)
                 {

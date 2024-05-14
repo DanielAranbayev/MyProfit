@@ -1,5 +1,6 @@
 package com.example.myprofit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.accessibilityservice.AccessibilityService;
@@ -12,7 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -57,13 +62,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (btnConnect==v)
         {
-//            if (etEmail.getText().toString().length()>0 &&etPassword.getText().toString().length()>0)
-//            {
-//                Intent intent=new Intent(this,MainMyProfit.class);
-//                startActivity(intent);
-//            }
-            Intent intent=new Intent(this,MainMyProfit.class);
-            startActivity(intent);
+            if (etEmail.getText().toString().length()>0 &&etPassword.getText().toString().length()>0)
+            {
+                FirebaseAuth mAuth;
+                mAuth = FirebaseAuth.getInstance();
+                mAuth.signInWithEmailAndPassword(String.valueOf(etEmail.getText()),String.valueOf(etPassword.getText()))
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
+                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                }
+                                else
+                                {
+                                    Toast.makeText(MainActivity.this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+            }
+            else
+            {
+                Toast.makeText(this, "please fill the field", Toast.LENGTH_SHORT).show();
+            }
         }
         if (SignIn==v)
         {
@@ -71,4 +92,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
+
 }

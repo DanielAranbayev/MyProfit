@@ -3860,6 +3860,7 @@ int layout fragment_details 0x7f0c003a
 int layout fragment_mass 0x7f0c003b
 int layout fragment_toning 0x7f0c003c
 int layout header_layout 0x7f0c007a
+int layout info 0x7f0c007b
 int layout m3_alert_dialog 0x7f0c003d
 int layout m3_alert_dialog_actions 0x7f0c003e
 int layout m3_alert_dialog_title 0x7f0c003f

@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,6 +19,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -92,8 +94,10 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                 int id = item.getItemId();
                 if(id == R.id.info)
                 {
-//                    Intent intent = new Intent(this, Account.class);
-//                    startActivity(intent);
+                    Dialog d = new Dialog(MainMonth.this);
+                    d.setContentView(R.layout.info);
+                    d.setCancelable(true);
+                    d.show();
                 }
                 if(id == R.id.logout)
                 {
