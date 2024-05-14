@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myprofit.app-mergeDebugResources-41:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.myprofit.app-mergeDebugResources-42:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\3ece9b9aae5bcebffb5f688b7d58bc78\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\0b32c66ff054372e307cb02cadf1e87c\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\a74a5d822fb805ac0f90cdeabd2c1c0b\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\6e44470dd6400ee0b5446fe907d4fbb8\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "36",
+                        "startColumns": "4",
+                        "startOffsets": "6957",
+                        "endColumns": "203",
+                        "endOffsets": "7156"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\26bc0008414ce207d1f66c5fb5a24806\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\43bb4c3478c90c756c680e4be893670f\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\8c523b065e29525c4a4bd4ec59c879e9\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "5528,5743",
                         "endColumns": "214,215",
                         "endOffsets": "5738,5954"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\df8104d43ecdd2ee5496ea49f3e1cb32\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "203",
-                        "endOffsets": "254"
-                    },
-                    "to": {
-                        "startLines": "36",
-                        "startColumns": "4",
-                        "startOffsets": "6957",
-                        "endColumns": "203",
-                        "endOffsets": "7156"
                     }
                 }
             ]

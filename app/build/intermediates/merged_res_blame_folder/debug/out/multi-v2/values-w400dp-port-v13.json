@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myprofit.app-mergeDebugResources-41:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.example.myprofit.app-mergeDebugResources-42:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\2fb844b65d01d9c3f755301b33b5f4fc\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\9c26bb402fa859f440f3dfafb347c690\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

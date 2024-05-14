@@ -24,9 +24,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -41,11 +46,15 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
     public DrawerLayout drawerLayout;
     public NavigationView menunav;
     ImageView btnmenu;
+    StorageReference storageReference;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_month);
+        storageReference = FirebaseStorage.getInstance().getReference();
+        loadProfilePic();
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
@@ -112,6 +121,17 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                     startActivity(intent);
                 }
                 return false;
+            }
+        });
+    }
+    public void loadProfilePic()
+    {
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        StorageReference propicReference = storageReference.child("propic/" + currentUser.getUid());
+        propicReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(MainMonth.this).load(uri).into(user3);
             }
         });
     }
