@@ -2,33 +2,17 @@ package com.example.myprofit;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
 
-public class Event
+
+public class Events
 {
-    public static ArrayList<Event> eventsList = new ArrayList<>();
-
-    public static ArrayList<Event> eventsForDate(LocalDate date)
-    {
-        ArrayList<Event> events = new ArrayList<>();
-
-        for(Event event : eventsList)
-        {
-            if(event.getDate().equals(date))
-                events.add(event);
-        }
-
-        return events;
-    }
-
-
     private String name;
     private LocalDate date;
     private LocalTime time;
-    public Event() {
+    public Events() {
     }
 
-    public Event(String name, LocalDate date, LocalTime time)
+    public Events(String name, LocalDate date, LocalTime time)
     {
         this.name = name;
         this.date = date;
