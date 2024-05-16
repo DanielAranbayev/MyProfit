@@ -15,6 +15,10 @@ public class CalendarUtils {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
         return date.format(formatter);
     }
+    public static String formattedDate(LocalDate date) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy");
+        return date.format(formatter);
+    }
     public static Object formattedTime(LocalTime time)
     {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh: mm: ss a");
@@ -74,5 +78,6 @@ public class CalendarUtils {
         return null;
 
     }
+
 
 }

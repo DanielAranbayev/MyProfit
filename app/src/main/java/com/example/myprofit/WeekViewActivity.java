@@ -62,11 +62,11 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         setEventAdapter();
     }
 
-    private void setEventAdapter()
-    {
+    private void setEventAdapter() {
         ArrayList<Event> dailyEvents = Event.eventsForDate(CalendarUtils.selectedDate);
-        EventAdapter eventAdapter = new EventAdapter(getApplicationContext(), dailyEvents);
+        EventAdapter eventAdapter = new EventAdapter(this, dailyEvents);
         eventListView.setAdapter(eventAdapter);
+        eventAdapter.notifyDataSetChanged(); // Ensure the ListView is refreshed
     }
 
     public void nextWeekAction(View view)

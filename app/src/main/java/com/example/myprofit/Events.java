@@ -2,10 +2,16 @@ package com.example.myprofit;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Events
 {
+
+//    private HashMap<Integer, ArrayList<Event>> events;
+
+
     private String name;
     private LocalDate date;
     private LocalTime time;

@@ -1,24 +1,31 @@
 package com.example.myprofit;
 
+import android.util.Log;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Event
 {
     public static ArrayList<Event> eventsList = new ArrayList<>();
+    public static HashMap<LocalDate, ArrayList<Event>> events = new HashMap<>();
+
 
     public static ArrayList<Event> eventsForDate(LocalDate date)
     {
-        ArrayList<Event> events = new ArrayList<>();
-
-        for(Event event : eventsList)
-        {
-            if(event.getDate().equals(date))
-                events.add(event);
+        ArrayList<Event> allEvents = new ArrayList<>();
+        for (LocalDate key : events.keySet()) {
+            allEvents.addAll(events.get(key));
         }
-
-        return events;
+        return allEvents;
+//        if (events != null) {
+//            if (events.containsKey(date)) {
+//                return events.get(date);
+//            }
+//        }
+//        return new ArrayList<>();
     }
 
 
@@ -28,7 +35,7 @@ public class Event
     public Event() {
     }
 
-    public Event(String name, LocalDate date, LocalTime time)
+    public Event(LocalDate date, String name, LocalTime time)
     {
         this.name = name;
         this.date = date;

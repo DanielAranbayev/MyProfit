@@ -1,5 +1,7 @@
 package com.example.myprofit;
 
+import static com.example.myprofit.Event.events;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,6 +14,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 public class EventEditActivity extends AppCompatActivity {
     private EditText eventNameET;
@@ -24,10 +27,10 @@ public class EventEditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_edit);
+        initWidgets();
         mAuth  = FirebaseAuth.getInstance();
         String uid = mAuth.getCurrentUser().getUid();
         databaseReference = FirebaseDatabase.getInstance().getReference("Events/" + uid);//giving reference
-        initWidgets();
         time = LocalTime.now();
         eventDateTV.setText("Date; " + CalendarUtils.formattedData(CalendarUtils.selectedDate));
         eventTimeTV.setText("Time; " + CalendarUtils.formattedTime(time));
@@ -41,10 +44,24 @@ public class EventEditActivity extends AppCompatActivity {
     public void saveEventAction(View view)
     {
         String eventName = eventNameET.getText().toString();
-        Event newEvent = new  Event(eventName,CalendarUtils.selectedDate,time);
+        Event newEvent = new  Event(CalendarUtils.selectedDate,eventName,time);
         Event.eventsList.add(newEvent);
-        Events dbEvent = new Events(eventName, CalendarUtils.selectedDate, time);
-        databaseReference.child(eventName).setValue(dbEvent);
+
+
+        if (events.containsKey(newEvent.getDate())) {
+            // Add the event to the existing ArrayList
+            events.get(newEvent.getDate()).add(newEvent);
+        } else {
+            // Create a new ArrayList and add the event
+            ArrayList<Event> eventList2 = new ArrayList<>();
+            eventList2.add(newEvent);
+            // Put the new list into the HashMap
+            events.put(newEvent.getDate(), eventList2);
+        }
+//        eventList.add(event);
+//        events.put(newEvent.getDate(), eventList);
+//        Events dbEvent = new Events(eventName, CalendarUtils.selectedDate, time);
+//        databaseReference.child(eventName).setValue(dbEvent);
         finish();
     }
 }
