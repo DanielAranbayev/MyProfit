@@ -13,12 +13,12 @@ public class Events
 
 
     private String name;
-    private LocalDate date;
+    private String date;
     private LocalTime time;
     public Events() {
     }
 
-    public Events(String name, LocalDate date, LocalTime time)
+    public Events(String name, String date, LocalTime time)
     {
         this.name = name;
         this.date = date;
@@ -35,12 +35,12 @@ public class Events
         this.name = name;
     }
 
-    public LocalDate getDate()
+    public String getDate()
     {
         return date;
     }
 
-    public void setDate(LocalDate date)
+    public void setDate(String date)
     {
         this.date = date;
     }

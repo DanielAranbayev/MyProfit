@@ -10,13 +10,13 @@ import java.util.HashMap;
 public class Event
 {
     public static ArrayList<Event> eventsList = new ArrayList<>();
-    public static HashMap<LocalDate, ArrayList<Event>> events = new HashMap<>();
+    public static HashMap<String, ArrayList<Event>> events = new HashMap<>();
 
 
     public static ArrayList<Event> eventsForDate(LocalDate date)
     {
         ArrayList<Event> allEvents = new ArrayList<>();
-        for (LocalDate key : events.keySet()) {
+        for (String key : events.keySet()) {
             allEvents.addAll(events.get(key));
         }
         return allEvents;
@@ -30,16 +30,16 @@ public class Event
 
 
     private String name;
-    private LocalDate date;
-    private LocalTime time;
+    private String date;
     public Event() {
+        // Default constructor required for calls to DataSnapshot.getValue(Event.class)
     }
 
-    public Event(LocalDate date, String name, LocalTime time)
+
+    public Event(String date, String name )
     {
         this.name = name;
         this.date = date;
-        this.time = time;
     }
 
     public String getName()
@@ -52,23 +52,14 @@ public class Event
         this.name = name;
     }
 
-    public LocalDate getDate()
+    public String getDate()
     {
         return date;
     }
 
-    public void setDate(LocalDate date)
+    public void setDate(String date)
     {
         this.date = date;
     }
 
-    public LocalTime getTime()
-    {
-        return time;
-    }
-
-    public void setTime(LocalTime time)
-    {
-        this.time = time;
-    }
 }

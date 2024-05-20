@@ -77,6 +77,7 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         // Display the retrieved username in the TextView
         mainusername.setText("Hello " + username);
 
+
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.Ihome) {
