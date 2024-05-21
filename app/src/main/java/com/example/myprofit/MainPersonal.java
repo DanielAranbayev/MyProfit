@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,9 +23,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class MainPersonal extends AppCompatActivity implements View.OnClickListener {
     Button btnbmi;
@@ -33,11 +39,15 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
     public DrawerLayout drawerLayout;
     public NavigationView menunav;
     ImageView btnmenu;
+    StorageReference storageReference;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_personal);
+        storageReference = FirebaseStorage.getInstance().getReference();
+        loadProfilePic();
         btnbmi = (Button)findViewById(R.id.btnbmi);
         btndetails = (TextView) findViewById(R.id.btndetails);
         btnbmi.setOnClickListener(this);
@@ -51,6 +61,7 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
 
         drawerLayout =findViewById(R.id.drawerLayout);
         menunav = (NavigationView) findViewById(R.id.menunav);
+
 
         // Retrieve the saved data from SharedPreferences
         // Retrieve user data from SharedPreferences
@@ -101,8 +112,10 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                 int id = item.getItemId();
                 if(id == R.id.info)
                 {
-//                    Intent intent = new Intent(this, Account.class);
-//                    startActivity(intent);
+                    Dialog d = new Dialog(MainPersonal.this);
+                    d.setContentView(R.layout.info);
+                    d.setCancelable(true);
+                    d.show();
                 }
                 if(id == R.id.logout)
                 {
@@ -120,6 +133,17 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+    }
+    public void loadProfilePic()
+    {
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        StorageReference propicReference = storageReference.child("propic/" + currentUser.getUid());
+        propicReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(MainPersonal.this).load(uri).into(user2);
+            }
+        });
     }
 
     @Override

@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,13 +19,19 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -39,11 +46,15 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
     public DrawerLayout drawerLayout;
     public NavigationView menunav;
     ImageView btnmenu;
+    StorageReference storageReference;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_month);
+        storageReference = FirebaseStorage.getInstance().getReference();
+        loadProfilePic();
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
@@ -65,6 +76,7 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
 
         // Display the retrieved username in the TextView
         mainusername.setText("Hello " + username);
+
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
@@ -92,8 +104,10 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                 int id = item.getItemId();
                 if(id == R.id.info)
                 {
-//                    Intent intent = new Intent(this, Account.class);
-//                    startActivity(intent);
+                    Dialog d = new Dialog(MainMonth.this);
+                    d.setContentView(R.layout.info);
+                    d.setCancelable(true);
+                    d.show();
                 }
                 if(id == R.id.logout)
                 {
@@ -108,6 +122,17 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                     startActivity(intent);
                 }
                 return false;
+            }
+        });
+    }
+    public void loadProfilePic()
+    {
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        StorageReference propicReference = storageReference.child("propic/" + currentUser.getUid());
+        propicReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(MainMonth.this).load(uri).into(user3);
             }
         });
     }

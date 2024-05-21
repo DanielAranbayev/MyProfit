@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.myprofit.app-mergeDebugResources-41:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.example.myprofit.app-mergeDebugResources-42:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\a74a5d822fb805ac0f90cdeabd2c1c0b\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\diana\\.gradle\\caches\\transforms-3\\26bc0008414ce207d1f66c5fb5a24806\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

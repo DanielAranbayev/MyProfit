@@ -108,6 +108,7 @@ layout fragment_details
 layout fragment_mass
 layout fragment_toning
 layout header_layout
+layout info
 menu bottom_nav_menu
 menu menunav
 mipmap ic_launcher

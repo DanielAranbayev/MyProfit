@@ -21,15 +21,24 @@ public class EventAdapter  extends ArrayAdapter<Event>
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+//        Event event = getItem(position);
+//
+//        if (convertView == null)
+//            convertView = LayoutInflater.from(getContext()).inflate(R.layout.event_cell,parent,false);
+//        TextView eventCellTV = convertView.findViewById(R.id.eventCellTV);
+//
+//        String eventTitle =event.getName() + " " + CalendarUtils.formattedTime(event.getTime());
+//        eventCellTV.setText(eventTitle);
+//        return convertView;
         Event event = getItem(position);
 
         if (convertView == null)
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.event_cell,parent,false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.event_cell, parent, false);
+
         TextView eventCellTV = convertView.findViewById(R.id.eventCellTV);
 
-        String eventTitle =event.getName() + " " + CalendarUtils.formattedTime(event.getTime());
+        String eventTitle = event.getDate() + " - " + event.getName();
         eventCellTV.setText(eventTitle);
         return convertView;
-
     }
 }

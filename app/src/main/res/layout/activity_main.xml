@@ -79,7 +79,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="שכחת את הסיסמה?"
+        android:text="Forgot password?"
+        android:textStyle="bold"
+        android:textColor="#4DA6FF"
         android:textSize="15dp"
         android:id="@+id/tvForgotPass"
         />
