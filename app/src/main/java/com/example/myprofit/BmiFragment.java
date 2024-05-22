@@ -92,7 +92,7 @@ public class BmiFragment extends Fragment implements View.OnClickListener {
     private void calculateBMI() {
         String weightStr = WeightET.getText().toString();
         String heightStr = HeightET.getText().toString();
-
+        //calculate bmi by weight and height
         if (!weightStr.isEmpty() && !heightStr.isEmpty()) {
             float weight = Float.parseFloat(weightStr);
             float height = Float.parseFloat(heightStr) / 100; // Convert height to meters

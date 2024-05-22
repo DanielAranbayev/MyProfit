@@ -52,13 +52,6 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
             editor.putString("email", email);
             editor.apply();
             Intent intent = new Intent(this,MainMyProfit.class);
-            if (etNameSN.getText().toString().length()>0
-                    && etNameAcountSN.getText().toString().length()>0
-                    && etEmailSN.getText().toString().length()>0
-                    && etPasswordSN.getText().toString().length()>0)
-            {
-
-            }
             if (btnSignIn==v)
             {
                 if (etNameSN.getText().toString().length()>0
@@ -66,18 +59,26 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
                         && etEmailSN.getText().toString().length()>0
                         && etPasswordSN.getText().toString().length()>0)
                 {
-                    mAuth.createUserWithEmailAndPassword(String.valueOf(etEmailSN.getText()),String.valueOf(etPasswordSN.getText()))
-                            .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                                @Override
-                                public void onSuccess(AuthResult authResult) {
-                                    startActivity(intent);
-                                }
-                            });
+                    if (etPasswordSN.getText().toString().length()>=6)
+                    {
+                        mAuth.createUserWithEmailAndPassword(String.valueOf(etEmailSN.getText()),String.valueOf(etPasswordSN.getText()))
+                                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                                    @Override
+                                    public void onSuccess(AuthResult authResult) {
+                                        startActivity(intent);
+                                    }
+                                });
+                    }
+                    else if (etPasswordSN.getText().toString().length()<6)
+                    {
+                        Toast.makeText(this, "the password must contain 6 or more characters", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else
                 {
                     Toast.makeText(this, "please fill the field", Toast.LENGTH_SHORT).show();
                 }
+
             }
         }
     }

@@ -3146,6 +3146,7 @@ int drawable notification_template_icon_bg 0x7f070109
 int drawable notification_template_icon_low_bg 0x7f07010a
 int drawable notification_tile_bg 0x7f07010b
 int drawable notify_panel_notification_icon_bg 0x7f07010c
+int drawable profit_magnivprofit_magni 0x7f070114
 int drawable rightarrow 0x7f07010d
 int drawable test_level_drawable 0x7f07010e
 int drawable tooltip_frame_dark 0x7f07010f

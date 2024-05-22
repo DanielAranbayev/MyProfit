@@ -11,10 +11,10 @@ import java.util.ArrayList;
 
 public class CalendarViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {
-    private final ArrayList<LocalDate> days;
-    public  final View parentView;
-    public final TextView dayOfMonth;
-    private final CalendarAdapter.OnItemListener onItemListener;
+    private final ArrayList<LocalDate> days;//מציינים את רשימת התאריכים שימוש לוח השנה.
+    public  final View parentView;//מציינים את התיבה העליונה של התא התצוגה. זו התיבה המכילה את כל תוכן התא התצוגה.
+    public final TextView dayOfMonth;//מציינים את התיבת הטקסט שמציגה את מספר היום בחודש בתא התצוגה.
+    private final CalendarAdapter.OnItemListener onItemListener;//מציינים את מאזין האירועים שמטפל בלחיצות על פריטים ברשימה
     public CalendarViewHolder(@NonNull View itemView, CalendarAdapter.OnItemListener onItemListener,ArrayList<LocalDate> days)
     {
         super(itemView);

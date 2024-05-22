@@ -25,19 +25,19 @@ import java.util.ArrayList;
 public class EventEditActivity extends AppCompatActivity {
     private EditText eventNameET;
     private TextView eventDateTV,eventTimeTV;
-    DatabaseReference databaseReference;
-    FirebaseAuth mAuth;
+    DatabaseReference databaseReference;// הפניה למסד הנתונים של Firebase
+    FirebaseAuth mAuth;// אובייקט לאימות המשתמש ב-Firebase
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_edit);
         initWidgets();
-        mAuth  = FirebaseAuth.getInstance();
-        String uid = mAuth.getCurrentUser().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Events/" + uid);//giving reference
-        eventDateTV.setText("Date; " + CalendarUtils.formattedData(CalendarUtils.selectedDate));
-        eventTimeTV.setText("Time; " + CalendarUtils.formattedTime(LocalTime.now()));
+        mAuth  = FirebaseAuth.getInstance();// אתחול אובייקט האימות של Firebase
+        String uid = mAuth.getCurrentUser().getUid();// קבלת מזהה המשתמש הנוכחי
+        databaseReference = FirebaseDatabase.getInstance().getReference("Events/" + uid);// הגדרת הפניה למסד הנתונים של האירועים לפי מזהה המשתמש
+        eventDateTV.setText("Date; " + CalendarUtils.formattedData(CalendarUtils.selectedDate));// הצגת התאריך הנבחר בשדה המתאים
+        eventTimeTV.setText("Time; " + CalendarUtils.formattedTime(LocalTime.now()));// הצגת השעה הנוכחית בשדה המתאים
     }
 
     private void initWidgets() {
@@ -47,24 +47,27 @@ public class EventEditActivity extends AppCompatActivity {
     }
     public void saveEventAction(View view)
     {
-        String eventName = eventNameET.getText().toString();
-        String date = CalendarUtils.formattedDate(CalendarUtils.selectedDate);
-        Event newEvent = new  Event(date,eventName);
-        Event.eventsList.add(newEvent);
+        String eventName = eventNameET.getText().toString();// קבלת שם האירוע שהוזן
+        String date = CalendarUtils.formattedDate(CalendarUtils.selectedDate);// קבלת התאריך בפורמט המתאים
+        Event newEvent = new  Event(date,eventName);// יצירת אובייקט אירוע חדש עם התאריך והשם
+        Event.eventsList.add(newEvent);// הוספת האירוע החדש לרשימת כל האירועים
 
-
+        // בדיקה אם כבר יש אירועים בתאריך זה במפה
         if (events.containsKey(newEvent.getDate())) {
-            // Add the event to the existing ArrayList
+            // הוספת האירוע לרשימת האירועים הקיימת בתאריך זה
             events.get(newEvent.getDate()).add(newEvent);
         } else {
-            // Create a new ArrayList and add the event
+            // יצירת רשימת אירועים חדשה והוספת האירוע
             ArrayList<Event> eventList2 = new ArrayList<>();
             eventList2.add(newEvent);
-            // Put the new list into the HashMap
+            // הוספת הרשימה החדשה למפה
             events.put(newEvent.getDate(), eventList2);
         }
+        // שמירת האירוע החדש במסד הנתונים של Firebase
         databaseReference.child(eventName).setValue(newEvent);
+
         startActivity(new Intent(this, WeekViewActivity.class));
+        // מעבר לפעילות WeekViewActivity (לוח שבועי)
         finish();
     }
 }

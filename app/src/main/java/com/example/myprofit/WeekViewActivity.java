@@ -31,13 +31,13 @@ import java.util.List;
 
 public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener {
     private TextView monthYearText;
-    private RecyclerView calendarRecyclerView;
-    private ListView eventListView;
-    private DatabaseReference databaseReference;
-    private FirebaseAuth mAuth;
-    ValueEventListener postListener;
-    EventAdapter eventAdapter;
-    ArrayList<Event> eventsList;
+    private RecyclerView calendarRecyclerView;// רשימת תאריכים בפורמט שבועי
+    private ListView eventListView;// רשימת אירועים
+    private DatabaseReference databaseReference;// הפניה למסד הנתונים של Firebase
+    private FirebaseAuth mAuth;// אובייקט לאימות המשתמש ב-Firebase
+    ValueEventListener postListener;// אזכור לפעולת רכיב הנתונים ב-Firebase
+    EventAdapter eventAdapter;// מתאם לרשימת אירועים
+    ArrayList<Event> eventsList;// רשימת האירועים המקומית
 
 
 
@@ -47,13 +47,13 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_view);
         initWidgets();
-        CalendarUtils.selectedDate = LocalDate.now();
-        mAuth = FirebaseAuth.getInstance();
+        CalendarUtils.selectedDate = LocalDate.now();// הגדרת התאריך הנבחר כהתאריך הנוכחי
+        mAuth = FirebaseAuth.getInstance();// אתחול אובייקט האימות של Firebase
         String uid = mAuth.getCurrentUser().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Events/" + uid);
-        loadEventsFromFirebase();
-        setWeekview();
-        eventsList = new ArrayList<>();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Events/" + uid);// הגדרת הפניה למסד הנתונים של האירועים לפי מזהה המשתמש
+        loadEventsFromFirebase();// טעינת האירועים מ-Firebase
+        setWeekview();// קביעת התצוגה של הלוח השבועי
+        eventsList = new ArrayList<>();// אתחול רשימת האירועים המקומית
     }
 
     private void initWidgets() {
@@ -63,20 +63,20 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     }
 
     private void setWeekview() {
-        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
-        ArrayList<LocalDate> days = daysInWeekArray(CalendarUtils.selectedDate);
+        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));// הצגת התאריך והשנה הנוכחיים
+        ArrayList<LocalDate> days = daysInWeekArray(CalendarUtils.selectedDate);// קבלת רשימת התאריכים בשבוע הנבחר
 
-        CalendarAdapter calendarAdapter = new CalendarAdapter(days, this);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
-        calendarRecyclerView.setLayoutManager(layoutManager);
-        calendarRecyclerView.setAdapter(calendarAdapter);
+        CalendarAdapter calendarAdapter = new CalendarAdapter(days, this);// יצירת מתאם לרשימת התאריכים
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);// הגדרת סידור התצוגה של הרשימה
+        calendarRecyclerView.setLayoutManager(layoutManager);// הגדרת המנהל של התצוגה
+        calendarRecyclerView.setAdapter(calendarAdapter);// הגדרת המתאם של התצוגה
     }
 
 
     @Override
     public void onItemClick(int position, LocalDate date) {
-        CalendarUtils.selectedDate = date;
-        setWeekview();
+        CalendarUtils.selectedDate = date;// קביעת התאריך הנבחר
+        setWeekview();// עדכון התצוגה
     }
 
     @Override
@@ -86,10 +86,14 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     }
 
     private void setEventAdapter() {
+        // קביעת האירועים היומיים
         ArrayList<Event> dailyEvents = Event.eventsForDate(CalendarUtils.selectedDate);
+        // יצירת המתאם
         EventAdapter eventAdapter = new EventAdapter(this, dailyEvents);
+        // הצבת המתאם בתוך רשימת התצוגה
         eventListView.setAdapter(eventAdapter);
-        eventAdapter.notifyDataSetChanged(); // Ensure the ListView is refreshed
+        // רענון רשימת התצוגה
+        eventAdapter.notifyDataSetChanged();
     }
 
     public void nextWeekAction(View view) {
@@ -130,31 +134,4 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         databaseReference.addValueEventListener(postListener);
 
     }
-
-//    private void loadEventsFromFirebase() {
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot snapshot) {
-//                Event.events.clear();
-//                for (DataSnapshot eventSnapshot : snapshot.getChildren()) {
-//                    Event event = eventSnapshot.getValue(Event.class);
-//                    if (event != null) {
-//                        if (Event.events.containsKey(event.getDate())) {
-//                            Event.events.get(event.getDate()).add(event);
-//                        } else {
-//                            ArrayList<Event> eventList = new ArrayList<>();
-//                            eventList.add(event);
-//                            Event.events.put(event.getDate(), eventList);
-//                        }
-//                    }
-//                }
-//                setEventAdapter();
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError error) {
-//                Log.e("WeekViewActivity", "Failed to load events from Firebase", error.toException());
-//            }
-//        });
-//    }
 }

@@ -12,7 +12,8 @@ public class Event
     public static ArrayList<Event> eventsList = new ArrayList<>();
     public static HashMap<String, ArrayList<Event>> events = new HashMap<>();
 
-
+    //פונקציה זו מחזירה רשימה של כל האירועים בתאריך מסוים.
+    // היא עוברת על כל האירועים במפה ומוסיפה את כולם לרשימה אחת שמוחזרת בסוף.
     public static ArrayList<Event> eventsForDate(LocalDate date)
     {
         ArrayList<Event> allEvents = new ArrayList<>();
@@ -20,12 +21,6 @@ public class Event
             allEvents.addAll(events.get(key));
         }
         return allEvents;
-//        if (events != null) {
-//            if (events.containsKey(date)) {
-//                return events.get(date);
-//            }
-//        }
-//        return new ArrayList<>();
     }
 
 

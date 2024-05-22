@@ -21,24 +21,20 @@ public class EventAdapter  extends ArrayAdapter<Event>
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        Event event = getItem(position);
-//
-//        if (convertView == null)
-//            convertView = LayoutInflater.from(getContext()).inflate(R.layout.event_cell,parent,false);
-//        TextView eventCellTV = convertView.findViewById(R.id.eventCellTV);
-//
-//        String eventTitle =event.getName() + " " + CalendarUtils.formattedTime(event.getTime());
-//        eventCellTV.setText(eventTitle);
-//        return convertView;
-        Event event = getItem(position);
-
-        if (convertView == null)
+        Event event = getItem(position);//מקבלת את אובייקט האירוע במיקום הנוכחי של הרשימה.
+        if (convertView == null)//אם אין תצוגה ממוחזרת זמינה, מנפחים תצוגה חדשה
+            // מנפח את פריסת התא המותאם אישית לאירוע
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.event_cell, parent, false);
 
+        // מחפש את TextView בפריסה המנופחת שבו יוגדר שם האירוע
         TextView eventCellTV = convertView.findViewById(R.id.eventCellTV);
 
+        // יוצר מחרוזת עבור שם האירוע שכוללת את התאריך ושם האירוע
         String eventTitle = event.getDate() + " - " + event.getName();
+
+        // מגדיר את מחרוזת שם האירוע ל-TextView
         eventCellTV.setText(eventTitle);
+        // מחזיר את התצוגה שהושלמה להצגה על המסך
         return convertView;
     }
 }

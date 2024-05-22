@@ -59,12 +59,12 @@
 32        android:extractNativeLibs="false"
 33        android:fullBackupContent="@xml/backup_rules"
 33-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:10:9-54
-34        android:icon="@mipmap/ic_launcher"
-34-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:11:9-43
+34        android:icon="@drawable/profit_magnivprofit_magni"
+34-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:11:9-59
 35        android:label="@string/app_name"
 35-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:12:9-41
-36        android:roundIcon="@mipmap/ic_launcher_round"
-36-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:13:9-54
+36        android:roundIcon="@drawable/profit_magnivprofit_magni"
+36-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:13:9-64
 37        android:supportsRtl="true"
 37-->C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:14:9-35
 38        android:testOnly="true"

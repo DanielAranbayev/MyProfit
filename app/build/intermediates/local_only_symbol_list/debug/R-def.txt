@@ -34,6 +34,7 @@ drawable lineardesing
 drawable list
 drawable logo
 drawable mypro
+drawable profit_magnivprofit_magni
 drawable rightarrow
 drawable user
 drawable welcome

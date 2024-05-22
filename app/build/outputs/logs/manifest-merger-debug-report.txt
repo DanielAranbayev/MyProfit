@@ -184,11 +184,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\di
 	android:fullBackupContent
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:13:9-64
 	tools:targetApi
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:11:9-59
 	android:allowBackup
 		ADDED from C:\Users\diana\AndroidStudioProjects\bagrut\MyProfit\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme

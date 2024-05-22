@@ -1,282 +1,286 @@
 [
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_fadegray.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/fadegray.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_event_edit.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_event_edit.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_fragment_mass.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/fragment_mass.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_week_view.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_week_view.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\font_abril_fatface.ttf.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\font\\abril_fatface.ttf"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/anim_slide_out_left.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/anim/slide_out_left.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_acceptbtn.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\acceptbtn.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_header_layout.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/header_layout.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_colculate_design.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\colculate_design.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_trainig_program.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_trainig_program.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_menu_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_menu_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\menu_menunav.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\menu\\menunav.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_lineardesing.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/lineardesing.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_logout_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_logout_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_mypro.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\mypro.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_acceptbtn.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/acceptbtn.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_btntraining.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/btntraining.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_header_layout.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\header_layout.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_calendar_month_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_calendar_month_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_rightarrow.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\rightarrow.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_mypro.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/mypro.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_trainig_program.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_trainig_program.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_main_myprofit.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_main_myprofit.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_fragment_toning.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\fragment_toning.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/anim_logo_animation.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/anim/logo_animation.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_animation.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_animation.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_rightarrow.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/rightarrow.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_main_personal.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_main_personal.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_event_cell.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/event_cell.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_info.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/info.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_circle_notifications_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_circle_notifications_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_logo.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/logo.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_list.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\list.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_event_edit.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_event_edit.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_fragment_mass.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\fragment_mass.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_sign_in.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_sign_in.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_keyboard_arrow_down_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_keyboard_arrow_down_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_logout_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_logout_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_main_month.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_main_month.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/font_abril_fatface.ttf.flat",
-        "source": "com.example.myprofit.app-main-46:/font/abril_fatface.ttf"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_week_view.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_week_view.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_whitefade.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\whitefade.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_information.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/information.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_event_cell.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\event_cell.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_main.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_main.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_main_myprofit.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_main_myprofit.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_facebookicone.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\facebookicone.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/xml_backup_rules.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\anim_logo_animation.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\anim\\logo_animation.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/anim_slide_in_left.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/anim/slide_in_left.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\logo.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_btnmove.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/btnmove.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_fragment_details.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\fragment_details.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_main_personal.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_main_personal.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_backtraining.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\backtraining.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_leftarrow.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/leftarrow.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_circle_notifications_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_circle_notifications_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\anim\\slide_out_left.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_edit_textback.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/edit_textback.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_menu_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_menu_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_calendar_cell.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/calendar_cell.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\anim\\slide_out_right.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_keyboard_arrow_down_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_keyboard_arrow_down_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_activity_sign_in.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\activity_sign_in.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/menu_menunav.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/menu/menunav.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_information.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\information.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_animation.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_animation.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_fragment_bmi.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\fragment_bmi.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_btnsignin.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/btnsignin.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_lineardesing.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\lineardesing.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_home_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_home_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_welcome.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\welcome.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_calendar_month_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_calendar_month_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_list.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/list.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_calendar_cell.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\calendar_cell.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_welcome.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/welcome.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_btnsignin.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\btnsignin.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_fragment_details.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/fragment_details.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_btnmove.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\btnmove.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/anim_slide_out_right.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/anim/slide_out_right.xml"
+        "merged": "com.example.myprofit.app-merged_res-44:/drawable_profit_magnivprofit_magni.png.flat",
+        "source": "com.example.myprofit.app-main-46:/drawable/profit_magnivprofit_magni.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_whitefade.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/whitefade.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_instagramlogo.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\instagramlogo.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_main_month.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/activity_main_month.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_leftarrow.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\leftarrow.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_backtraining.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/backtraining.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_menu_book_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_menu_book_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_home_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_user.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/user.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_btntraining.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\btntraining.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_menu_book_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_menu_book_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_fragment_design.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\fragment_design.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_facebookicone.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/facebookicone.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\layout_info.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\layout\\info.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_fragment_toning.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/fragment_toning.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_instagramlogo.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/instagramlogo.png"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_fragment_design.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/fragment_design.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\baseline_person_24.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/anim_slide_in_right.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/anim/slide_in_right.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_colculate_design.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/colculate_design.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.myprofit.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_edit_textback.xml.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\edit_textback.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/layout_fragment_bmi.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/layout/fragment_bmi.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_user.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\user.png"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_baseline_person_24.xml.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/baseline_person_24.xml"
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_fadegray.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\fadegray.png"
+    },
+    {
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     }
 ]

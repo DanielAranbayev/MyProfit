@@ -142,13 +142,13 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
 
     }
     private void setMonthView() {
-        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
-        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
+        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));// הצגת התאריך והשנה הנוכחיים
+        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);// קבלת רשימת התאריכים בחודש הנבחר
 
-        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
-        calendarRecyclerView.setLayoutManager(layoutManager);
-        calendarRecyclerView.setAdapter(calendarAdapter);
+        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);// יצירת מתאם לרשימת התאריכים
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);// הגדרת סידור התצוגה של הרשימה
+        calendarRecyclerView.setLayoutManager(layoutManager);// הגדרת המנהל של התצוגה
+        calendarRecyclerView.setAdapter(calendarAdapter);// הגדרת המתאם של התצוגה
     }
 
 
@@ -168,8 +168,8 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
     public void onItemClick(int position, LocalDate date) {
         if (date !=null)
         {
-        CalendarUtils.selectedDate = date;
-        setMonthView();
+        CalendarUtils.selectedDate = date;// קביעת התאריך הנבחר
+        setMonthView();// עדכון התצוגה
         }
     }
 
