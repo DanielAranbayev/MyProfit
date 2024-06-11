@@ -59,7 +59,7 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
-        bottomNavigationView.setSelectedItemId(R.id.Imenu);
+        bottomNavigationView.setSelectedItemId(R.id.Ischedule);
         user3 = (ImageView) findViewById(R.id.user3);
         user3.setOnClickListener(this);
         btnmenu =(ImageView) findViewById(R.id.btnmenu);
@@ -90,7 +90,7 @@ public class MainMonth extends AppCompatActivity implements CalendarAdapter.OnIt
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 finish();
                 return true;
-            } else if (itemId == R.id.Imenu) {
+            } else if (itemId == R.id.Ischedule) {
                 return true;
             }
             return false;

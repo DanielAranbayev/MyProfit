@@ -26,7 +26,7 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText etEmail,etPassword;
     TextView btnConnect;
-    TextView tvForgotPass,SignIn;
+    TextView SignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etEmail =(EditText) findViewById(R.id.etEmail);
         etPassword =(EditText) findViewById(R.id.etPassword);
         btnConnect = (TextView) findViewById(R.id.btnConnect);
-        tvForgotPass = (TextView) findViewById(R.id.tvForgotPass);
         SignIn = (TextView) findViewById(R.id.SignIn);
 
-        tvForgotPass.setPaintFlags(tvForgotPass.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-
         btnConnect.setOnClickListener(this);
-        tvForgotPass.setOnClickListener(this);
         SignIn.setOnClickListener(this);
     }
 

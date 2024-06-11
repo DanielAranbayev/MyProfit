@@ -1,0 +1,285 @@
+@startuml
+class com.example.myprofit.CalendarViewHolder {
+- ArrayList<LocalDate> days
++ View parentView
++ TextView dayOfMonth
+- CalendarAdapter.OnItemListener onItemListener
++ <<Create>> CalendarViewHolder(View,CalendarAdapter.OnItemListener,ArrayList<LocalDate>)
++ void onClick(View)
+}
+
+
+class com.example.myprofit.EventEditActivity {
+- EditText eventNameET
+- TextView eventDateTV
+~ DatabaseReference databaseReference
+~ FirebaseAuth mAuth
+# void onCreate(Bundle)
+- void initWidgets()
++ void saveEventAction(View)
+}
+
+
+class com.example.myprofit.ToningFragment {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
++ <<Create>> ToningFragment()
++ {static} ToningFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+
+
+class com.example.myprofit.TrainigProgram {
+~ TextView btntoning
+# void onCreate(Bundle)
++ void onClick(View)
+}
+
+
+class com.example.myprofit.CalendarUtils {
++ {static} LocalDate selectedDate
++ {static} Object formattedData(LocalDate)
++ {static} String formattedDate(LocalDate)
++ {static} Object formattedTime(LocalTime)
++ {static} String monthYearFromDate(LocalDate)
++ {static} ArrayList<LocalDate> daysInMonthArray(LocalDate)
++ {static} ArrayList<LocalDate> daysInWeekArray(LocalDate)
+- {static} LocalDate sundayForDate(LocalDate)
+}
+
+
+class com.example.myprofit.BmiFragment {
+- EditText WeightET
+- TextView BmiTV
+- TextView btnCalculate
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
++ <<Create>> BmiFragment()
++ {static} BmiFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
++ void onClick(View)
+- void calculateBMI()
+- void displayResult(float)
+}
+
+
+class com.example.myprofit.MassFragment {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
++ <<Create>> MassFragment()
++ {static} MassFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+
+
+class com.example.myprofit.Event {
++ {static} ArrayList<Event> eventsList
++ {static} HashMap<String,ArrayList<Event>> events
+- String name
+- String date
++ <<Create>> Event()
++ <<Create>> Event(String,String)
++ {static} ArrayList<Event> eventsForDate(LocalDate)
++ String getName()
++ void setName(String)
++ String getDate()
++ void setDate(String)
+}
+
+
+class com.example.myprofit.DetailsFragment {
++ TextView fullnameTV
++ TextView usernameTV
++ TextView EmailTV
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
++ <<Create>> DetailsFragment()
++ {static} DetailsFragment newInstance(String,String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+
+
+class com.example.myprofit.CalendarAdapter {
+- ArrayList<LocalDate> days
+- OnItemListener onItemListener
++ <<Create>> CalendarAdapter(ArrayList<LocalDate>,OnItemListener)
++ CalendarViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(CalendarViewHolder,int)
++ int getItemCount()
+}
+
+
+interface com.example.myprofit.CalendarAdapter$OnItemListener {
+~ void onItemClick(int,LocalDate)
+}
+
+class com.example.myprofit.MainMonth {
+~ TextView monthYearText
+~ RecyclerView calendarRecyclerView
+~ ImageView user3
++ DrawerLayout drawerLayout
++ NavigationView menunav
+~ ImageView btnmenu
+~ StorageReference storageReference
+~ FirebaseUser currentUser
+# void onCreate(Bundle)
++ void loadProfilePic()
+- void initWidgets()
+- void setMonthView()
++ void previousMonthAction(View)
++ void nextMonthAction(View)
++ void onItemClick(int,LocalDate)
++ void onClick(View)
+}
+
+
+class com.example.myprofit.MainActivity {
+~ EditText etEmail
+~ TextView btnConnect
+~ TextView SignIn
+# void onCreate(Bundle)
+# void onStart()
++ void onClick(View)
+}
+
+
+class com.example.myprofit.WeekViewActivity {
+- TextView monthYearText
+- RecyclerView calendarRecyclerView
+- ListView eventListView
+- DatabaseReference databaseReference
+- FirebaseAuth mAuth
+~ ValueEventListener postListener
+~ EventAdapter eventAdapter
+~ ArrayList<Event> eventsList
+# void onCreate(Bundle)
+- void initWidgets()
+- void setWeekview()
++ void onItemClick(int,LocalDate)
+# void onResume()
+- void setEventAdapter()
++ void nextWeekAction(View)
++ void previousWeekAction(View)
++ void newEventAction(View)
+- void loadEventsFromFirebase()
+}
+
+
+class com.example.myprofit.MainMyProfit {
+~ ImageView btnmenu
+~ TextView WeekSchedule
++ DrawerLayout drawerLayout
++ NavigationView menunav
+- {static} int PICK_IMAGE_REQUEST
+~ StorageReference storageReference
+~ FirebaseUser currentUser
+# void onCreate(Bundle)
++ void onClick(View)
+# void onActivityResult(int,int,Intent)
++ void loadProfilePic()
++ void uploadImage(Uri)
+- void openInstagramProfile(String)
+- void openWebsite(String)
+}
+
+
+class com.example.myprofit.AnimationActivity {
+~ Animation splashAnimation
+~ ImageView splashLogo
+# void onCreate(Bundle)
+}
+
+
+class com.example.myprofit.MainPersonal {
+~ Button btnbmi
+~ TextView btndetails
+~ ImageView user2
++ DrawerLayout drawerLayout
++ NavigationView menunav
+~ ImageView btnmenu
+~ StorageReference storageReference
+~ FirebaseUser currentUser
+# void onCreate(Bundle)
++ void loadProfilePic()
++ void onClick(View)
+}
+
+
+class com.example.myprofit.SignIn {
+~ TextView btnSignIn
+~ EditText etNameSN
+~ SharedPreferences sharedPreferences
+~ FirebaseAuth mAuth
+# void onCreate(Bundle)
++ void onClick(View)
+}
+
+
+class com.example.myprofit.EventAdapter {
++ <<Create>> EventAdapter(Context,List<Event>)
++ View getView(int,View,ViewGroup)
+}
+
+class com.example.myprofit.User {
+~ String id
+~ String fullname
+~ String username
+~ String email
+~ String password
++ <<Create>> User(String,String,String,String,String)
++ <<Create>> User()
++ String getId()
++ void setId(String)
++ String getFullname()
++ void setFullname(String)
++ String getUsername()
++ void setUsername(String)
++ String getEmail()
++ void setEmail(String)
++ String getPassword()
++ void setPassword(String)
+}
+
+
+
+
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.CalendarViewHolder
+com.example.myprofit.ViewHolder <|-- com.example.myprofit.CalendarViewHolder
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.EventEditActivity
+androidx.fragment.app.Fragment <|-- com.example.myprofit.ToningFragment
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.TrainigProgram
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.TrainigProgram
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.BmiFragment
+androidx.fragment.app.Fragment <|-- com.example.myprofit.BmiFragment
+androidx.fragment.app.Fragment <|-- com.example.myprofit.MassFragment
+androidx.fragment.app.Fragment <|-- com.example.myprofit.DetailsFragment
+com.example.myprofit.Adapter <|-- com.example.myprofit.CalendarAdapter
+com.example.myprofit.CalendarAdapter +.. com.example.myprofit.CalendarAdapter$OnItemListener
+com.example.myprofit.OnItemListener <|.. com.example.myprofit.MainMonth
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.MainMonth
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.MainMonth
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.MainActivity
+com.example.myprofit.OnItemListener <|.. com.example.myprofit.WeekViewActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.WeekViewActivity
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.MainMyProfit
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.MainMyProfit
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.AnimationActivity
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.MainPersonal
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.MainPersonal
+com.example.myprofit.OnClickListener <|.. com.example.myprofit.SignIn
+androidx.appcompat.app.AppCompatActivity <|-- com.example.myprofit.SignIn
+android.widget.ArrayAdapter <|-- com.example.myprofit.EventAdapter
+@enduml

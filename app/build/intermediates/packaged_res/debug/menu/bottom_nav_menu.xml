@@ -11,7 +11,7 @@
         android:icon="@drawable/baseline_person_24"
         android:id="@+id/Iperson"/>
     <item
-        android:title="Menu"
+        android:title="Schedule"
         android:icon="@drawable/baseline_calendar_month_24"
-        android:id="@+id/Imenu"/>
+        android:id="@+id/Ischedule"/>
 </menu>

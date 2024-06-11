@@ -44,8 +44,8 @@ id BmiTV
 id Email
 id HeightET
 id Ihome
-id Imenu
 id Iperson
+id Ischedule
 id ResultTV
 id SignIn
 id WeekSchedule

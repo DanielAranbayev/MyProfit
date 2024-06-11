@@ -10,5 +10,4 @@
         android:layout_height="match_parent"
         android:background="@drawable/logo"
         android:id="@+id/logo"/>
-
 </LinearLayout>

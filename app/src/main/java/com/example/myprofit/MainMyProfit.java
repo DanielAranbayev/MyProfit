@@ -1,5 +1,6 @@
 package com.example.myprofit;
 
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -39,7 +40,6 @@ import org.jetbrains.annotations.Nullable;
 public class MainMyProfit extends AppCompatActivity implements View.OnClickListener {
     ImageView btnmenu ,instagram ,facebook,user1;
     TextView WeekSchedule, trainingprogram, mainusername;
-    SharedPreferences sharedPreferences;
     public DrawerLayout drawerLayout;
     public NavigationView menunav;
     private static final int PICK_IMAGE_REQUEST = 1;
@@ -116,7 +116,7 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
-            } else if (itemId == R.id.Imenu) {
+            } else if (itemId == R.id.Ischedule) {
                 startActivity(new Intent(getApplicationContext(), MainMonth.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
@@ -154,6 +154,7 @@ public class MainMyProfit extends AppCompatActivity implements View.OnClickListe
         {
             Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, PICK_IMAGE_REQUEST);
+            //ActivityResultLauncher
         }
 
     }

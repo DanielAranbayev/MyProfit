@@ -43,7 +43,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:background="@drawable/edit_textback"
-                android:hint="[km]"
+                android:hint="[kg]"
                 android:gravity="center"
                 android:id="@+id/WeightET"/>
         </LinearLayout>

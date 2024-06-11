@@ -64,7 +64,7 @@ public class EventEditActivity extends AppCompatActivity {
             events.put(newEvent.getDate(), eventList2);
         }
         // שמירת האירוע החדש במסד הנתונים של Firebase
-        databaseReference.child(eventName).setValue(newEvent);
+        databaseReference.child(eventName).setValue(newEvent);//מכניס את הפריט של הרשימה לפיירבייס
 
         startActivity(new Intent(this, WeekViewActivity.class));
         // מעבר לפעילות WeekViewActivity (לוח שבועי)

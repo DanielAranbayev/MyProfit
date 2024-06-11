@@ -204,10 +204,6 @@
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\btnmove.xml"
     },
     {
-        "merged": "com.example.myprofit.app-merged_res-44:/drawable_profit_magnivprofit_magni.png.flat",
-        "source": "com.example.myprofit.app-main-46:/drawable/profit_magnivprofit_magni.png"
-    },
-    {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_instagramlogo.png.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\instagramlogo.png"
     },
@@ -222,6 +218,10 @@
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\menu_bottom_nav_menu.xml.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.myprofit.app-merged_res-44:/layout_activity_main_month.xml.flat",
+        "source": "com.example.myprofit.app-main-46:/layout/activity_main_month.xml"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_baseline_home_24.xml.flat",
@@ -278,6 +278,10 @@
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_fadegray.png.flat",
         "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\fadegray.png"
+    },
+    {
+        "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\drawable_profit_magnivprofit_magni.png.flat",
+        "source": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-main-46:\\drawable\\profit_magnivprofit_magni.png"
     },
     {
         "merged": "C:\\Users\\diana\\.gradle\\daemon\\8.2\\com.example.myprofit.app-merged_res-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

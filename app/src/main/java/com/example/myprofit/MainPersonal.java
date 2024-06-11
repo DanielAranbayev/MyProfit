@@ -96,7 +96,7 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
                 return true;
             } else if (itemId == R.id.Iperson) {
                 return true;
-            } else if (itemId == R.id.Imenu) {
+            } else if (itemId == R.id.Ischedule) {
                 startActivity(new Intent(getApplicationContext(), MainMonth.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
@@ -134,6 +134,7 @@ public class MainPersonal extends AppCompatActivity implements View.OnClickListe
         });
 
     }
+    //reloading the pic from firebase
     public void loadProfilePic()
     {
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
